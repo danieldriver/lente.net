@@ -1,0 +1,275 @@
+/*
+-----------------------------------------------
+Title:		Screen styles for lente.net
+Author: 	Daniel R. Driver
+Date:		15 March 2013 (v0.1)
+Palette:	colourlovers.com/palette/292482/
+			colourlovers.com/palette/1419658/
+----------------------------------------------- */
+
+/* Reset (Eric Meyer, v2.0)
+----------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+ol, ul {
+	list-style: none;
+	}
+blockquote, q {
+	quotes: none;
+	}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+/* Basic typography
+----------------------------------------------- */
+
+body {
+	font-family: Skolar PE, Georgia, serif;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 16px;
+	color: #031634;
+	background: #e8ddcb;
+	}
+aside, .footnotes, footer {
+	font-size: 13px;
+	line-height: 19px;
+	}
+a {
+	color: #c02942;
+	}
+a:active, a:hover, a:visited {
+	color: #542437;
+	}
+#wrap {
+	width: 728px;
+	margin: 0 auto;
+	}
+header[role="banner"] {
+	height: 66px;
+	margin: 16px 0;
+	padding-bottom: 16px;
+	border-bottom: 2px solid #cdb380;
+	text-rendering: optimizelegibility;
+	}
+header[role="banner"] a {
+	text-decoration: none;
+	}
+header[role="banner"] h1 {
+	width: 248px;
+	float: left;
+	font-size: 50px;
+	line-height: 1;
+	font-weight: normal;
+	margin: 0;
+	}
+header[role="banner"] h1 small {
+	display: block;
+	font-size: 16px;
+	font-style: italic;
+	color: #036564;
+	}
+header[role="banner"] h1 a {
+	color: #033649;
+	}
+header[role="banner"] h1 a:hover i {
+	color: #036564;
+	}
+nav[role="navigation"] {
+	width: 480px;
+	float: left;
+	font-size: 21px;
+	}
+nav[role="navigation"] li a {
+	display: inline-block;
+	float: left;
+	padding: 22px 22px 22px 0;
+	color: #542437;
+	}
+nav[role="navigation"] li:last-child a {
+	padding-right: 0;
+	}
+nav[role="navigation"] li a:hover, header nav li a.active {
+	color: #c02942;
+	}
+section[role="main"] {
+	width: 480px;
+	float: right;
+	}
+article aside {
+	width: 232px;
+	margin-right: 16px;
+	float: right;
+	}
+section[role="main"] aside {
+	float: left;
+	margin-left: -248px;
+	}
+blockquote {
+	font-style: italic;
+	margin: 16px 0 16px 22px;
+	}
+blockquote em {
+	font-style: normal;
+	}
+footer {
+	margin: 66px auto 44px;
+	text-align: center;
+	color: #033649;
+	border-top: 1px solid #cdb380;
+	}
+footer a {
+	color: #036564;
+	}
+/* Border - css-tricks.com/body-border/ */
+#top, #bottom,
+#left, #right {
+	background: #cdb380;
+	position: fixed;
+	}
+#top, #bottom {
+	left: 0; right: 0;
+	height: 12px; /* 0.75em */
+	}
+	#top { top: 0; }
+	#bottom { bottom: 0; }
+#left, #right {
+	top: 0; bottom: 0;
+	width: 12px; /* 0.75em */
+	}
+	#left { left: 0; }
+	#right { right: 0; }
+
+/* Headings & paragraphs
+----------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 18px;
+	color: #036564;
+	text-rendering: optimizelegibility;
+	}
+h1 {
+	font-size: 30px;
+	line-height: 34px;
+	font-weight: 600;
+	color: #033649;
+	}
+h2 + h3, h4, h5 + p, h6 + p {
+	margin-top: 22px;
+	}
+h2, h3, h4 {
+	margin-bottom: 22px;
+	}
+h2, h3 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	}
+h2 {
+	font-size: 21px;
+	}
+p + h2 {
+	margin-top: 44px;
+	}
+h3 {
+	margin-top: 33px;
+	}
+h4, h5, h6 {
+	font-style: italic;
+	}
+h5, h6 {
+	display: run-in;
+	font-size: 16px;
+	padding-right: 22px;
+	margin-top: 100px;
+	}
+h6 {
+	margin-left: 22px;
+	}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+	text-transform: none;
+	letter-spacing: 0;
+	font-size: 13px;
+	color: #033649;
+	}
+h1 small {
+	font-size: 21px;
+	}
+h2 small {
+	font-size: 18px;
+	}
+h3 small {
+	font-size: 16px;
+	}
+
+
+
+
+
+em {
+	font-style: italic;
+	}
+strong {
+	font-weight: bold;
+	}
+
+
+p {
+	margin: 0;
+	}
+p + p, section > aside + p {
+	text-indent: 22px; /* 1.5rem */
+	}
+
+/* 
+section[role="main"] p:last-child:after {
+	content: "\00B6"; 
+    }
+ */
+
+
+
+/* Miscellaneous
+----------------------------------------------- */
+
+/* evening */
+/* 
+body {
+	color: #e8ddcb;
+	background: #033649;
+	}
+#top, #bottom,
+#left, #right {
+	background: #031634;
+	}
+a:link, a:visited {
+	color: #d95b43;
+	}
+a:hover, a:active {
+	color: #c02942;
+	}
+ */
+
+.group:after {
+	content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+    }
+
