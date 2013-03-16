@@ -108,18 +108,14 @@ nav[role="navigation"] li:last-child a {
 nav[role="navigation"] li a:hover, header nav li a.active {
 	color: #c02942;
 	}
+aside[role="contentinfo"] {
+	width: 232px;
+	float: left;
+	}
 section[role="main"] {
 	width: 480px;
 	float: right;
-	}
-article aside {
-	width: 232px;
-	margin-right: 16px;
-	float: right;
-	}
-section[role="main"] aside {
-	float: left;
-	margin-left: -248px;
+	position: relative;
 	}
 blockquote {
 	font-style: italic;
@@ -244,6 +240,32 @@ section[role="main"] p:last-child:after {
 
 
 
+
+
+/* Footnotes
+----------------------------------------------- */
+
+.footnotes {
+	width: 232px;
+	position: absolute;
+	left: -248px;
+	top: 133px; /* 19px*7 */
+	}
+.footnotes hr {
+	width: 30%;
+	}
+.footnotes ol {
+	list-style: decimal inside;
+	}
+.footnotes li {
+	padding-bottom: 1em;
+	}
+.footnotes li p + p {
+	text-indent: 1em;
+	}
+
+
+
 /* Miscellaneous
 ----------------------------------------------- */
 
@@ -265,11 +287,27 @@ a:hover, a:active {
 	}
  */
 
+/* from h5bp main.css */
+::selection {
+    background: #cdb380;
+    text-shadow: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cdb380;
+    margin: 1em 0;
+    padding: 0;
+}
+.group:before,
 .group:after {
-	content: "."; 
-    display: block; 
-    height: 0; 
-    clear: both; 
-    visibility: hidden;
-    }
-
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.group:after {
+    clear: both;
+}
+.group {
+    *zoom: 1;
+}
