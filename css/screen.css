@@ -111,6 +111,8 @@ nav[role="navigation"] li a:hover, header nav li a.active {
 aside[role="contentinfo"] {
 	width: 232px;
 	float: left;
+	font-style: italic;
+	color: #542437;
 	}
 section[role="main"] {
 	width: 480px;
@@ -192,7 +194,7 @@ h5, h6 {
 	display: run-in;
 	font-size: 16px;
 	padding-right: 22px;
-	margin-top: 100px;
+	font-weight: 600;
 	}
 h6 {
 	margin-left: 22px;
@@ -228,8 +230,8 @@ strong {
 p {
 	margin: 0;
 	}
-p + p, section > aside + p {
-	text-indent: 22px; /* 1.5rem */
+p + p {
+	text-indent: 22px;
 	}
 
 /* 
@@ -249,7 +251,8 @@ section[role="main"] p:last-child:after {
 	width: 232px;
 	position: absolute;
 	left: -248px;
-	top: 133px; /* 19px*7 */
+	top: 0;
+	padding-top: 133px; /* 19px*7 */
 	}
 .footnotes hr {
 	width: 30%;

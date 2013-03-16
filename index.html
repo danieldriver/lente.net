@@ -8,6 +8,7 @@
 	<meta name="author" content="Daniel R. Driver">
 
 	<link rel="stylesheet" media="screen, projection" href="css/screen.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -53,9 +54,9 @@
 			<div class="footnotes">
 				<hr>
 				<ol>
-					<li id="fn1"><p>This is a footnote. Strip steak ground round sausage pig hamburger, meatloaf frankfurter kielbasa short ribs.</p></li>
-					<li id="fn2"><p>This is another footnote. Meatloaf beef hamburger bresaola kielbasa t-bone, andouille ball tip corned beef capicola ground round beef ribs.  Jerky ham hock tail, brisket meatloaf prosciutto pig.</p><p>It has a second paragraph. Meatloaf beef hamburger bresaola kielbasa t-bone, andouille ball tip corned beef capicola ground round beef ribs.</p></li>
-					<li id="fn3"><p>For good measure, here is a third short footnote. A simple citation, say.</p></li>
+					<li id="fn1"><p>This is a footnote. Strip steak ground round sausage pig hamburger, meatloaf frankfurter kielbasa short ribs. <a href="#fnref1">↩</a></p></li>
+					<li id="fn2"><p>This is another footnote. Meatloaf beef hamburger bresaola kielbasa t-bone, andouille ball tip corned beef capicola ground round beef ribs.  Jerky ham hock tail, brisket meatloaf prosciutto pig.</p><p>It has a second paragraph. Meatloaf beef hamburger bresaola kielbasa t-bone, andouille ball tip corned beef capicola ground round beef ribs. <a href="#fnref2">↩</a></p></li>
+					<li id="fn3"><p>For good measure, here is a third short footnote. A simple citation, say. <a href="#fnref3">↩</a></p></li>
 				</ol>
 			</div>
 		</section>
@@ -67,10 +68,24 @@
 	</footer>
 
 </div><!-- /#wrap -->
+
 <!-- Let b stand for border. -->
 <b id="top"></b>
 <b id="bottom"></b>
 <b id="left"></b>
 <b id="right"></b>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!-- TK Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
 </body>
 </html>
