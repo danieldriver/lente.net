@@ -251,17 +251,20 @@ section[role="main"] p:last-child:after {
 	width: 232px;
 	position: absolute;
 	left: -248px;
-	top: 0;
-	padding-top: 133px; /* 19px*7 */
+	bottom: 0;
 	}
 .footnotes hr {
 	width: 30%;
+	display: none;
 	}
 .footnotes ol {
 	list-style: decimal inside;
 	}
 .footnotes li {
 	padding-bottom: 1em;
+	}
+.footnotes li:last-child {
+	padding-bottom: 0;
 	}
 .footnotes li p + p {
 	text-indent: 1em;
