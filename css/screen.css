@@ -34,14 +34,17 @@ table {
 	border-spacing: 0;
 	}
 
-/* colourlovers.com/palette/292482/, /1419658/
+/* Colour palette
+   --------------
+   colourlovers.com/palette/292482/
+   colourlovers.com/palette/1419658/
 ----------------------------------------------- */
 
 a {
 	color: #c02942;
 	}
 a:active, a:hover {
-	color: #542437;
+	color: #d95b43;
 	}
 a:visited {
 	color: #542437;
@@ -61,7 +64,7 @@ hr {
 
 /* Basic typography
    ----------------
-   30em*16px = 480px ; 22/16 = 1.375
+   30em * 16px = 480 ; 22/16 = 1.375
    229 + 22 + (229 + 22 + 229) = 731
 ----------------------------------------------- */
 
@@ -69,11 +72,11 @@ body {
 	font-family: Skolar PE, Georgia, serif;
 	font-size: 16px;
 	line-height: 22px;
-	padding: 16px;
+	padding: 11px;
 	color: #031634;
 	background: #e8ddcb;
 	}
-#wrap {
+.container {
 	width: 731px;
 	margin: 0 auto;
 	}
@@ -114,7 +117,7 @@ nav li {
 nav li a {
 	display: block;
 	height: 44px;
-	padding: 22px 0 0 16px;
+	padding-top: 22px;
 	overflow: hidden;
 	text-align: right;
 	text-decoration: none;
@@ -136,7 +139,7 @@ nav li small {
 
 
 aside[role="contentinfo"] {
-	width: 232px;
+	width: 229px;
 	float: left;
 	font-style: italic;
 	color: #542437;
@@ -153,14 +156,24 @@ blockquote {
 blockquote em {
 	font-style: normal;
 	}
-footer {
-	margin: 66px auto 44px;
-	text-align: center;
-	color: #033649;
-	border-top: 1px solid #cdb380;
+
+#extra {
+	height: 198px;
+	margin-top: 66px;
+	background-color: #cdb380;
 	}
-footer a {
-	color: #036564;
+footer {
+	text-align: center;
+	padding: 19px 0;
+	color: #e8ddcb;
+	background: #542437;
+	}
+footer a, footer a:active, footer a:visited {
+	text-decoration: none;
+	color: #cdb380;
+	}
+footer a:hover {
+	text-decoration: underline;
 	}
 /* Border - css-tricks.com/body-border/ */
 #top, #bottom,
@@ -170,13 +183,13 @@ footer a {
 	}
 #top, #bottom {
 	left: 0; right: 0;
-	height: 12px; /* 0.75em */
+	height: 11px;
 	}
 	#top { top: 0; }
 	#bottom { bottom: 0; }
 #left, #right {
 	top: 0; bottom: 0;
-	width: 12px; /* 0.75em */
+	width: 11px;
 	}
 	#left { left: 0; }
 	#right { right: 0; }
@@ -193,7 +206,7 @@ h1 {
 	font-size: 30px;
 	line-height: 34px;
 	font-weight: 600;
-	color: #033649;
+	color: #031634;
 	}
 h2 + h3, h4, h5 + p, h6 + p {
 	margin-top: 22px;
@@ -242,15 +255,31 @@ h3 small {
 	font-size: 16px;
 	}
 
-
-
+header[role="heading"] {
+	margin: 44px 0;
+	}
+header[role="heading"] a {
+	text-decoration: none;
+	}
+header[role="heading"] a:hover {
+	text-decoration: underline;
+	}
+.byline {
+	padding-top: 22px;
+	font-style: italic;
+	color: #033649;
+	}
+a.author {
+	font-style: normal;
+	text-transform: uppercase;
+	}
 
 
 em {
 	font-style: italic;
 	}
 strong {
-	font-weight: bold;
+	font-weight: 600;
 	}
 
 
@@ -279,9 +308,9 @@ aside, .footnotes, footer {
 ----------------------------------------------- */
 
 .footnotes {
-	width: 232px;
+	width: 229px;
 	position: absolute;
-	left: -248px;
+	left: -251px;
 	bottom: 0;
 	}
 .footnotes hr {
