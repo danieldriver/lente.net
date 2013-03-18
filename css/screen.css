@@ -3,8 +3,6 @@
 Title:		Screen styles for lente.net
 Author: 	Daniel R. Driver
 Date:		15 March 2013 (v0.1)
-Palette:	colourlovers.com/palette/292482/
-			colourlovers.com/palette/1419658/
 ----------------------------------------------- */
 
 /* Reset (Eric Meyer, v2.0)
@@ -36,7 +34,35 @@ table {
 	border-spacing: 0;
 	}
 
+/* colourlovers.com/palette/292482/, /1419658/
+----------------------------------------------- */
+
+a {
+	color: #c02942;
+	}
+a:active, a:hover {
+	color: #542437;
+	}
+a:visited {
+	color: #542437;
+	}
+::selection {
+	background: #cdb380;
+	text-shadow: none;
+	}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cdb380;
+    margin: 1em 0;
+    padding: 0;
+	}
+
 /* Basic typography
+   ----------------
+   30em*16px = 480px ; 22/16 = 1.375
+   229 + 22 + (229 + 22 + 229) = 731
 ----------------------------------------------- */
 
 body {
@@ -47,67 +73,68 @@ body {
 	color: #031634;
 	background: #e8ddcb;
 	}
-aside, .footnotes, footer {
-	font-size: 13px;
-	line-height: 19px;
-	}
-a {
-	color: #c02942;
-	}
-a:active, a:hover, a:visited {
-	color: #542437;
-	}
 #wrap {
-	width: 728px;
+	width: 731px;
 	margin: 0 auto;
 	}
 header[role="banner"] {
 	height: 66px;
-	margin: 16px 0;
-	padding-bottom: 16px;
+	margin: 22px 0;
+	padding-bottom: 22px;
 	border-bottom: 2px solid #cdb380;
+	}
+#logo {
+	float: left;
+	width: 229px;
+	margin-right: 22px;
+	}
+#logo a {
+	display: block;
+	width: 229px;
+	height: 66px;
+	background: url(../img/lente.png) no-repeat top left;
+	background-size: 229px 132px;
+	}
+#logo a:hover {
+	background-position: 0 -66px;
+	}
+#logo img {
+	display: block;
+	height: 0;
+	}
+nav {
+	float: left;
+	width: 480px;
 	text-rendering: optimizelegibility;
 	}
-header[role="banner"] a {
-	text-decoration: none;
-	}
-header[role="banner"] h1 {
-	width: 248px;
+nav li {
 	float: left;
-	font-size: 50px;
-	line-height: 1;
-	font-weight: normal;
-	margin: 0;
+	width: 120px;
 	}
-header[role="banner"] h1 small {
+nav li a {
 	display: block;
-	font-size: 16px;
-	font-style: italic;
-	color: #036564;
-	}
-header[role="banner"] h1 a {
-	color: #033649;
-	}
-header[role="banner"] h1 a:hover i {
-	color: #036564;
-	}
-nav[role="navigation"] {
-	width: 480px;
-	float: left;
-	font-size: 21px;
-	}
-nav[role="navigation"] li a {
-	display: inline-block;
-	float: left;
-	padding: 22px 22px 22px 0;
+	height: 44px;
+	padding: 22px 0 0 16px;
+	overflow: hidden;
+	text-align: right;
+	text-decoration: none;
 	color: #542437;
 	}
-nav[role="navigation"] li:last-child a {
-	padding-right: 0;
-	}
-nav[role="navigation"] li a:hover, header nav li a.active {
+nav li a:hover, header nav li a.active {
 	color: #c02942;
 	}
+nav li i {
+	display: block;
+	height: 18px;
+	font-size: 18px;
+	text-transform: uppercase;
+	}
+nav li small {
+	font-size: 13px;
+	}
+
+
+
 aside[role="contentinfo"] {
 	width: 232px;
 	float: left;
@@ -240,6 +267,10 @@ section[role="main"] p:last-child:after {
     }
  */
 
+aside, .footnotes, footer {
+	font-size: 13px;
+	line-height: 19px;
+	}
 
 
 
@@ -294,18 +325,6 @@ a:hover, a:active {
  */
 
 /* from h5bp main.css */
-::selection {
-    background: #cdb380;
-    text-shadow: none;
-}
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #cdb380;
-    margin: 1em 0;
-    padding: 0;
-}
 .group:before,
 .group:after {
     content: " "; /* 1 */
