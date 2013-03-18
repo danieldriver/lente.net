@@ -1,0 +1,4 @@
+site_name: 'Lente.net'
+markdown: rdiscount
+	extensions: [smart]
+permalink: /reviews/:title
