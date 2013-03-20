@@ -1,4 +1,3 @@
 site_name: 'Lente.net'
-markdown: rdiscount
-	extensions: [smart]
-permalink: /reviews/:title
+site_tagline: 'Open Acces for Bible &amp; Theology'
+# permalink: /reviews/:title
