@@ -82,8 +82,8 @@ body {
   }
 header[role="banner"] {
   height: 72px;
-  margin: 12px 0 24px;
-  padding-bottom: 12px;
+  padding: 12px 0;
+  margin-bottom: 24px;
   border-bottom: 2px solid #cdb380;
   text-rendering: optimizelegibility;
   }
