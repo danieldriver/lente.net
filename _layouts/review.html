@@ -18,10 +18,10 @@ layout: default
 
 		<article class="group">
 			<header role="heading">
-				{% for book in page.books %}
-				<h1><em>{{book.title}}{% if book.subtitle %}: {{book.subtitle}}{% endif %}</em>, by {{book.author}}</h1>
-				<h4>{% if book.series %}{{book.series}}. {% endif %}{{book.publisher}}: {{book.city}}, {{book.year}}.{% if book.pages %} Pp. {{book.pages}}.{% endif %}{% if book.price %} {{book.price}}.{% endif %}</h4>
-				{% endfor %}
+				{%for book in page.books%}
+				<h1><em>{{book.title}}{%if book.subtitle%}: {{book.subtitle}}{%endif%}</em>, by {{book.author}}</h1>
+				<h4>{%if book.series%}{{book.series}}. {%endif%}{{book.publisher}}: {{book.city}}, {{book.year}}.{%if book.pages%} Pp. {{book.pages}}.{%endif%}{%if book.price%} {{book.price}}.{%endif%}</h4>
+				{%endfor%}
 			</header>
 
 			<aside role="contentinfo">
@@ -32,7 +32,7 @@ layout: default
 					<li>
 						<a href="#">
 							<img alt="{{book.title}}" src="http://images.amazon.com/images/P/{{book.asin}}.jpg">
-							<span class="isbn">ISBN {{book.isbn}}</span>
+							<p class="caption">isbn {{book.isbn}}</p>
 						</a>
 					</li>
 					{%endfor%}

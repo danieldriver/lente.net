@@ -64,42 +64,42 @@ hr {
 
 /* Basic typography
    ----------------
-   30em * 16px = 480 ; 22/16 = 1.375
-   229 + 22 + (229 + 22 + 229) = 731
+   30em * 16px = 480 ; 24/16 = 1.5
+   228 + 24 + (228 + 24 + 228) = 732
 ----------------------------------------------- */
 
 body {
   font-family: Skolar PE, Georgia, serif;
   font-size: 16px;
-  line-height: 22px;
-  padding: 11px;
+  line-height: 24px;
+  padding: 12px;
   color: #031634;
   background: #e8ddcb;
   }
 .container {
-  width: 731px;
+  width: 732px;
   margin: 0 auto;
   }
 header[role="banner"] {
-  height: 66px;
-  margin: 22px 0;
-  padding-bottom: 22px;
+  height: 72px;
+  margin: 24px 0;
+  padding-bottom: 24px;
   border-bottom: 2px solid #cdb380;
   }
 #logo {
   float: left;
-  width: 229px;
-  margin-right: 22px;
+  width: 228px;
+  margin-right: 24px;
   }
 #logo a {
   display: block;
-  width: 229px;
-  height: 66px;
+  width: 228px;
+  height: 72px;
   background: url(../img/lente.png) no-repeat top left;
-  background-size: 229px 132px;
+  background-size: 228px 132px;
   }
 #logo a:hover {
-  background-position: 0 -66px;
+  background-position: 0 -72px;
   }
 #logo img {
   display: block;
@@ -116,8 +116,8 @@ nav li {
   }
 nav li a {
   display: block;
-  height: 44px;
-  padding-top: 22px;
+  height: 48px;
+  padding-top: 24px;
   overflow: hidden;
   text-align: right;
   text-decoration: none;
@@ -139,7 +139,7 @@ nav li small {
 
 
 aside[role="contentinfo"] {
-  width: 229px;
+  width: 228px;
   float: left;
   font-style: italic;
   color: #542437;
@@ -151,7 +151,7 @@ section[role="main"] {
   }
 blockquote {
   font-style: italic;
-  margin: 16px 0 16px 22px;
+  margin: 16px 0 16px 24px;
   }
 blockquote em {
   font-style: normal;
@@ -159,7 +159,7 @@ blockquote em {
 
 #extra {
   height: 198px;
-  margin-top: 66px;
+  margin-top: 72px;
   background-color: #cdb380;
   }
 footer {
@@ -183,13 +183,13 @@ footer a:hover {
   }
 #top, #bottom {
   left: 0; right: 0;
-  height: 11px;
+  height: 12px;
   }
   #top { top: 0; }
   #bottom { bottom: 0; }
 #left, #right {
   top: 0; bottom: 0;
-  width: 11px;
+  width: 12px;
   }
   #left { left: 0; }
   #right { right: 0; }
@@ -209,10 +209,10 @@ h1 {
   color: #031634;
   }
 h2 + h3, h4, h5 + p, h6 + p {
-  margin-top: 22px;
+  margin-top: 24px;
   }
 h2, h3, h4 {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   }
 h2, h3 {
   text-transform: uppercase;
@@ -222,7 +222,7 @@ h2 {
   font-size: 21px;
   }
 p + h2 {
-  margin-top: 44px;
+  margin-top: 48px;
   }
 h3 {
   margin-top: 33px;
@@ -233,11 +233,11 @@ h4, h5, h6 {
 h5, h6 {
   display: run-in;
   font-size: 16px;
-  padding-right: 22px;
+  padding-right: 24px;
   font-weight: bold;
   }
 h6 {
-  margin-left: 22px;
+  margin-left: 24px;
   }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   text-transform: none;
@@ -256,7 +256,7 @@ h3 small {
   }
 
 header[role="heading"] {
-  margin: 44px 0;
+  margin: 48px 0;
   }
 header[role="heading"] a {
   text-decoration: none;
@@ -265,7 +265,7 @@ header[role="heading"] a:hover {
   text-decoration: underline;
   }
 .byline {
-  padding-top: 22px;
+  padding-top: 24px;
   font-style: italic;
   color: #033649;
   }
@@ -286,7 +286,7 @@ p {
   margin: 0;
   }
 p + p {
-  text-indent: 22px;
+  text-indent: 24px;
   }
 
 /* 
@@ -307,7 +307,7 @@ aside, .footnotes, footer {
 ----------------------------------------------- */
 
 .footnotes {
-  width: 229px;
+  width: 228px;
   position: absolute;
   left: -251px;
   bottom: 0;
@@ -333,12 +333,12 @@ aside, .footnotes, footer {
 ----------------------------------------------- */
 
 .bookthumbs {
-  margin-left: -22px;
+  margin-left: -24px;
   }
 .bookthumbs > li {
   float: left;
-  margin-top: 22px;
-  margin-left: 22px;
+  margin-top: 24px;
+  margin-left: 24px;
   }
 .bookthumbs > li a {
   display: block;
@@ -370,8 +370,11 @@ aside, .footnotes, footer {
   margin-right: auto;
   margin-left: auto;
   }
-.bookthumbs > li a .isbn {
+.bookthumbs > li a .caption {
   font-style: normal;
+  color: #542437;
+  padding-top: 6px;
+  text-align: center;
   }
 
 
