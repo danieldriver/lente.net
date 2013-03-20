@@ -82,9 +82,10 @@ body {
   }
 header[role="banner"] {
   height: 72px;
-  margin: 24px 0;
-  padding-bottom: 24px;
+  margin: 12px 0 24px;
+  padding-bottom: 12px;
   border-bottom: 2px solid #cdb380;
+  text-rendering: optimizelegibility;
   }
 #logo {
   float: left;
@@ -96,7 +97,7 @@ header[role="banner"] {
   width: 228px;
   height: 72px;
   background: url(../img/lente.png) no-repeat top left;
-  background-size: 228px 132px;
+  background-size: 228px 144px;
   }
 #logo a:hover {
   background-position: 0 -72px;
@@ -108,7 +109,6 @@ header[role="banner"] {
 nav {
   float: left;
   width: 480px;
-  text-rendering: optimizelegibility;
   }
 nav li {
   float: left;
@@ -116,23 +116,23 @@ nav li {
   }
 nav li a {
   display: block;
-  height: 48px;
-  padding-top: 24px;
-  overflow: hidden;
+  height: 36px;
+  padding: 20px 0 16px;
+  line-height: 18px;
   text-align: right;
   text-decoration: none;
+  overflow: hidden;
   color: #542437;
   }
 nav li a:hover, header nav li a.active {
   color: #c02942;
   }
 nav li i {
-  display: block;
-  height: 18px;
   font-size: 18px;
   text-transform: uppercase;
   }
 nav li small {
+  display: block;
   font-size: 13px;
   }
 
@@ -333,12 +333,12 @@ aside, .footnotes, footer {
 ----------------------------------------------- */
 
 .bookthumbs {
-  margin-left: -24px;
+  /* margin-left: -24px; */
   }
 .bookthumbs > li {
   float: left;
   margin-top: 24px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   }
 .bookthumbs > li a {
   display: block;
