@@ -26,6 +26,18 @@ layout: default
 
 			<aside role="contentinfo">
 				<p>Reviewed by <a class="author" href="#">{{page.author}}</a>, published on <time>{{page.date | date: "%d %B %Y"}}</time>.</p>
+				
+				<ul class="bookthumbs group">
+					{%for book in page.books%}
+					<li>
+						<a href="#">
+							<img alt="{{book.title}}" src="http://images.amazon.com/images/P/{{book.asin}}.jpg">
+							<span class="isbn">ISBN {{book.isbn}}</span>
+						</a>
+					</li>
+					{%endfor%}
+				</ul>
+				            			
 			</aside>
 	
 			<section role="main">
