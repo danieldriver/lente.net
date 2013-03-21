@@ -275,16 +275,24 @@ a.author {
   }
 
 
-.contents header {
+.issue-contents header {
   padding-bottom: 8px;
   margin: 24px 0;
   border-bottom: 1px solid #cdb380;
 	}
-
-.contents ul {
+.issue-contents ul {
 	width: 480px;
 	float: right;
 	}
+.issue-contents .month {
+	width: 228px;
+	margin-left: -252px;
+	float: left;
+	}
+.issue-contents h3 {
+	margin: 0;
+	}	
+
 
 em {
   font-style: italic;

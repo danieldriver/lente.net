@@ -10,13 +10,16 @@ Example:
 
 {% for post in contents %}
   {% capture this_year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
   {% capture next_year %}{{ post.previous.date | date: '%Y' }}{% endcapture %}
+  {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
   {% if forloop.first %}
-    <section class="contents group">
+    <section class="issue-contents group">
       <header role="directory">
-        <h1>{{ this_year }}</h1>
+        <h1>{{ this_year }} <small>(current issue)</small></h1>
       </header>
       <ul>
+        <li class="month"><h3>{{ this_month }}</h3></li>
   {% endif %}
         <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% if forloop.last %}
@@ -27,12 +30,16 @@ Example:
       </ul>
     </section>
 
-    <section class="contents group">
+    <section class="issue-contents group">
       <header role="directory">
-        <h1>{{ next_year }}</h1>
+        <h1>{{ next_year }} <small>Issue</small></h1>
       </header>
       <ul>
+        <li class="month"><h3>{{ next_month }}</h3></li>
     {% else %}
+      {% if this_month != next_month %}
+        <li class="month"><h3>{{ next_month }}</h3></li>
+      {% endif %}
     {% endif %}
   {% endif %}
 {% endfor %}
