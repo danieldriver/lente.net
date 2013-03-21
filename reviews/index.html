@@ -4,7 +4,7 @@ category: reviews
 title: Book Reviews
 ---
 
-{% for post in site.posts %}
+{% for post in site.categories.reviews %}
 	{% unless post.next %}
 		<section>
 			<header role="directory">
@@ -15,8 +15,10 @@ title: Book Reviews
 		{% capture thisyear %}{{ post.date | date: '%Y' }}{% endcapture %}
 		{% capture nextyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
 		{% if thisyear != nextyear %}
+<!-- uncomment in second year
 			</ul>
 		</section>
+ -->
 		<section>
 			<header role="directory">
 				<h1>{{ post.date | date: '%Y' }}</h1>
