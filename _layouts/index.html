@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+		<header class="group" role="banner">
+			<div id="logo">
+				<a href="#"><img src="img/lente.png" alt="Lente.net"></img></a>
+			</div>
+			<nav role="navigation">
+				<ul>
+					<li><a href="#"><i>Journal</i> <small>Articles on S<em>&amp;</em>T</small></a></li>
+					<li><a class="active" href="#"><i>Reviews</i> <small>Topical Books</small></a></li>
+					<li><a href="#"><i>Lists</i> <small>Bibliographies</small></a></li>
+					<li><a href="#"><i>Notes</i> <small>News, Notanda</small></a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<article class="group">
+			<header role="heading">
+				{%for book in page.books%}
+				<h1><em>{{book.title}}{%if book.subtitle%}: {{book.subtitle}}{%endif%}</em>, by {{book.author}}</h1>
+				<h4>{%if book.series%}{{book.series}}. {%endif%}{{book.publisher}}: {{book.city}}, {{book.year}}.{%if book.pages%} Pp. {{book.pages}}.{%endif%}{%if book.price%} {{book.price}}.{%endif%}</h4>
+				{%endfor%}
+			</header>
+
+			<aside role="contentinfo">
+				<p>Reviewed by <a class="author" href="#">{{page.author}}</a>, published on <time>{{page.date | date: "%d %B %Y"}}</time>.</p>
+				
+				<ul class="bookthumbs group">
+					{%for book in page.books%}
+					<li>
+						<a href="#">
+							<img alt="{{book.title}}" src="http://images.amazon.com/images/P/{{book.asin}}.jpg">
+							<p class="caption">isbn {{book.isbn}}</p>
+						</a>
+					</li>
+					{%endfor%}
+				</ul>
+				            			
+			</aside>
+	
+			<section role="main">
+				{{content}}
+			</section>
+		</article>
