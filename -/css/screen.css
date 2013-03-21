@@ -275,6 +275,17 @@ a.author {
   }
 
 
+.archive header {
+  padding-bottom: 8px;
+  margin: 24px 0;
+  border-bottom: 1px solid #cdb380;
+	}
+
+.archive ul {
+	width: 480px;
+	float: right;
+	}
+
 em {
   font-style: italic;
   }
