@@ -284,14 +284,12 @@ a.author {
 	width: 480px;
 	float: right;
 	}
-.issue-contents .month {
-	width: 228px;
-	margin-left: -252px;
-	float: left;
-	}
 .issue-contents h3 {
-	margin: 0;
-	}	
+	display: block;
+	float: left;
+	width: 228px;
+	margin: 0 0 0 -252px;
+	}
 
 
 em {
