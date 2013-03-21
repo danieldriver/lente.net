@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{site.title}}{% unless page.title %}, {{ site.tagline }}{% endunless %}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Lente.net is the open-access press behind the Journal for Scripture &amp; Theology. Lente, as in the old saying festina lente: make haste slowly.">
-	<meta name="author" content="Daniel R. Driver">
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{site.title}}{% unless page.title %}, {{ site.tagline }}{% endunless %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lente.net is the open-access press behind the Journal for Scripture &amp; Theology. Lente, as in the old saying festina lente: make haste slowly.">
+  <meta name="author" content="Daniel R. Driver">
 
-	<link rel="stylesheet" media="screen, projection" href="/-/css/screen.css">
-	<script src="/-/js/modernizr-2.6.2.min.js"></script>
+  <link rel="stylesheet" media="screen, projection" href="/-/css/screen.css">
+  <script src="/-/js/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-	<div class="container">
+  <div class="container">
 
-		{{content}}
+    <header class="group" role="banner">
+      <div id="logo">
+        <a href="#"><img src="img/lente.png" alt="Lente.net"></img></a>
+      </div>
+      <nav role="navigation">
+        <ul>
+          <li><a {% if page.url contains '/jst/' %}class="active" {% endif %}href="/jst/"><i>Journal</i> <small>Articles on S<em>&amp;</em>T</small></a></li>
+          <li><a {% if page.url contains '/reviews/' %}class="active" {% endif %}href="/reviews/"><i>Reviews</i> <small>Topical Books</small></a></li>
+          <li><a {% if page.url contains '/lists/' %}class="active" {% endif %}href="/lists/"><i>Lists</i> <small>Bibliographies</small></a></li>
+          <li><a {% if page.url contains '/notes/' %}class="active" {% endif %}href="/notes/"><i>Notes</i> <small>News, Notanda</small></a></li>
+        </ul>
+      </nav>
+    </header>
 
-	</div><!-- /container -->
-	<div id="extra">
-		<div class="container">
-		</div>
-	</div><!-- /extra -->
+{{content}}
 
-	<footer class="group">
-		<p>Design and content by Daniel R. Driver. <a href="#copy">Copyright tk</a>. Festina lente: make haste slowly.</p>
-	</footer>
+  </div><!-- /container -->
+  <div id="extra">
+    <div class="container">
+    </div>
+  </div><!-- /extra -->
 
-	<!-- Let b stand for border. -->
-	<b id="top"></b>
-	<b id="bottom"></b>
-	<b id="left"></b>
-	<b id="right"></b>
+  <footer class="group">
+    <p>Design and content by Daniel R. Driver. <a href="#copy">Copyright tk</a>. Festina lente: make haste slowly.</p>
+  </footer>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="/-/js/jquery-1.9.1.min.js"><\/script>')</script>
-	<script src="/-/js/plugins.js"></script>
-	<script src="/-/js/main.js"></script>
-	<!-- TK Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-	<script>
-		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-		s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
+  <!-- Let b stand for border. -->
+  <b id="top"></b>
+  <b id="bottom"></b>
+  <b id="left"></b>
+  <b id="right"></b>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/-/js/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="/-/js/plugins.js"></script>
+  <script src="/-/js/main.js"></script>
+  <!-- TK Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
 
 </body>
 </html>
