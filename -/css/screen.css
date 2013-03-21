@@ -119,7 +119,7 @@ nav li a {
   height: 36px;
   padding: 20px 0 16px;
   line-height: 18px;
-  text-align: right;
+  text-align: center;
   text-decoration: none;
   overflow: hidden;
   color: #542437;
@@ -284,11 +284,14 @@ a.author {
 	width: 480px;
 	float: right;
 	}
-.issue-contents h3 {
+.issue-contents h2 {
 	display: block;
 	float: left;
 	width: 228px;
 	margin: 0 0 0 -252px;
+	text-transform: none;
+	font-size: 16px;
+	font-style: italic;
 	}
 
 

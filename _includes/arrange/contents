@@ -20,7 +20,7 @@ Example:
         <h1>{{ this_year }} <small>{% if this_year == site_year %}(current issue){% else %} Issue{% endif %}</small></h1>
       </header>
       <ul>
-        <li><h3>{{ this_month }}</h3></li>
+        <li><h2>{{ this_month }}</h2></li>
   {% endif %}
         <li><span>{{ post.date | date: '%B %e, %Y' }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% if forloop.last %}
@@ -36,10 +36,10 @@ Example:
         <h1>{{ next_year }} <small>Issue</small></h1>
       </header>
       <ul>
-        <li><h3>{{ next_month }}</h3></li>
+        <li><h2>{{ next_month }}</h2></li>
     {% else %}
       {% if this_month != next_month %}
-        <li><h3>{{ next_month }}</h3></li>
+        <li><h2>{{ next_month }}</h2></li>
       {% endif %}
     {% endif %}
   {% endif %}
