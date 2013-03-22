@@ -1,3 +1,13 @@
 title: 'Lente.net'
 tagline: 'for Scripture &amp; Theology'
+
+markdown: pandoc
+pandoc:
+  skip: false
+  flags: '--smart'
+  outputs:
+    - pdf: '--latex-engine=xelatex'
+    - markdown
+    - epub
+
 # permalink: /reviews/:title
