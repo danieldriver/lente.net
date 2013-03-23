@@ -36,28 +36,33 @@ table {
 
 /* Colour palette
    --------------
-   colourlovers.com/palette/292482/
-   colourlovers.com/palette/1419658/
+   803113 - Red Ochre
+   c63d2a - Vermilion
+   bb8a24 - Lemon Ochre
+   eebd34 - Orpiment
+   4e8160 - Malachite
+   315065 - Azurite
+   172d42 - Lazurite
+   212725 - Indigo
+   f0ebe5 - Lead White
 ----------------------------------------------- */
 
 a {
-  color: #c02942;
+  color: #315065;
   }
-a:active, a:hover {
-  color: #d95b43;
+a:active, a:hover, a:visited {
+  color: #172d42;
   }
-a:visited {
-  color: #542437;
-  }
+
 ::selection {
-  background: #cdb380;
+  background: #bb8a24;
   text-shadow: none;
   }
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #cdb380;
+  border-top: 1px solid #4e8160;
   margin: 1em 0;
   padding: 0;
   }
@@ -73,8 +78,8 @@ body {
   font-size: 16px;
   line-height: 24px;
   padding: 12px;
-  color: #031634;
-  background: #e8ddcb;
+  color: #212725;
+  background: #f0ebe5;
   }
 .container {
   width: 732px;
@@ -84,7 +89,7 @@ header[role="banner"] {
   height: 72px;
   padding: 24px 0;
   margin-bottom: 24px;
-  border-bottom: 4px solid #cdb380;
+  border-bottom: 4px solid #4e8160;
   text-rendering: optimizelegibility;
   }
 #logo {
@@ -122,10 +127,13 @@ nav li a {
   text-align: center;
   text-decoration: none;
   overflow: hidden;
-  color: #542437;
+  color: #803113;
   }
-nav li a:hover, header nav li a.active {
-  color: #c02942;
+nav li a:visited {
+  color: #803113;
+  }
+nav li a:active, nav li a:hover, header nav li a.active {
+  color: #c63d2a;
   }
 nav li i {
   font-size: 18px;
@@ -142,7 +150,7 @@ aside[role="contentinfo"] {
   width: 228px;
   float: left;
   font-style: italic;
-  color: #542437;
+  color: #bb8a24;
   }
 section[role="main"] {
   width: 480px;
@@ -157,28 +165,26 @@ blockquote em {
   font-style: normal;
   }
 
-#extra {
+footer {
   height: 198px;
   margin-top: 72px;
-  background-color: #cdb380;
-  }
-footer {
   text-align: center;
   padding: 19px 0;
-  color: #e8ddcb;
-  background: #542437;
+  color: #f0ebe5;
+  background: #172d42;
   }
 footer a, footer a:active, footer a:visited {
   text-decoration: none;
-  color: #cdb380;
+  color: #4e8160;
   }
 footer a:hover {
   text-decoration: underline;
+  color: #4e8160;
   }
 /* Border - css-tricks.com/body-border/ */
 #top, #bottom,
 #left, #right {
-  background: #cdb380;
+  background: #4e8160;
   position: fixed;
   }
 #top, #bottom {
@@ -199,14 +205,14 @@ footer a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
-  color: #036564;
+  color: #c63d2a;
   text-rendering: optimizelegibility;
   }
 h1 {
   font-size: 30px;
   line-height: 34px;
   font-weight: bold;
-  color: #031634;
+  color: #212725;
   }
 h2 + h3, h4, h5 + p, h6 + p {
   margin-top: 24px;
@@ -243,10 +249,11 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   text-transform: none;
   letter-spacing: 0;
   font-size: 13px;
-  color: #033649;
+  color: #803113;
   }
 h1 small {
   font-size: 21px;
+  color: #172d42;
   }
 h2 small {
   font-size: 18px;
@@ -258,16 +265,18 @@ h3 small {
 header[role="heading"] {
   margin: 48px 0;
   }
+header[role="heading"] h4,
+header[role="heading"] a,
+.byline {
+  color: #803113;
+  }
 header[role="heading"] a {
-  text-decoration: none;
-  }
-header[role="heading"] a:hover {
-  text-decoration: underline;
-  }
+	color: #c63d2a;
+	}
+
 .byline {
   padding-top: 24px;
   font-style: italic;
-  color: #033649;
   }
 a.author {
   font-style: normal;
@@ -278,7 +287,7 @@ a.author {
 .issue-contents header {
   padding-bottom: 8px;
   margin: 24px 0;
-  border-bottom: 1px solid #cdb380;
+  border-bottom: 1px solid #4e8160;
 	}
 .issue-contents ul {
 	width: 480px;
@@ -292,6 +301,7 @@ a.author {
 	text-transform: none;
 	font-size: 16px;
 	font-style: italic;
+  color: #4e8160;
 	}
 
 
@@ -365,13 +375,13 @@ aside, .footnotes, footer {
   padding: 4px;
   text-decoration: none;
   background-color: #fff;
-  border: 1px solid #cdb380;
+  border: 1px solid #803113;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
-  -webkit-box-shadow: 0 1px 3px rgba(3, 22, 52, 0.1);
-     -moz-box-shadow: 0 1px 3px rgba(3, 22, 52, 0.1);
-          box-shadow: 0 1px 3px rgba(3, 22, 52, 0.1);
+  -webkit-box-shadow: 0 1px 3px rgba(33, 39, 37, 0.2);
+     -moz-box-shadow: 0 1px 3px rgba(33, 39, 37, 0.2);
+          box-shadow: 0 1px 3px rgba(33, 39, 37, 0.2);
   -webkit-transition: all 0.2s ease-in-out;
      -moz-transition: all 0.2s ease-in-out;
        -o-transition: all 0.2s ease-in-out;
@@ -379,10 +389,10 @@ aside, .footnotes, footer {
   }
 .bookthumbs > li a:hover,
 .bookthumbs > li a:focus {
-  border-color: #d95b43;
-  -webkit-box-shadow: 0 1px 4px rgba(192, 41, 66, 0.25);
-     -moz-box-shadow: 0 1px 4px rgba(192, 41, 66, 0.25);
-          box-shadow: 0 1px 4px rgba(192, 41, 66, 0.25);
+  border-color: #c63d2a;
+  -webkit-box-shadow: 0 1px 4px rgba(128, 49, 19, 0.4);
+     -moz-box-shadow: 0 1px 4px rgba(128, 49, 19, 0.4);
+          box-shadow: 0 1px 4px rgba(128, 49, 19, 0.4);
   }
 .bookthumbs > li a img {
   display: block;
@@ -392,7 +402,7 @@ aside, .footnotes, footer {
   }
 .bookthumbs > li a .caption {
   font-style: normal;
-  color: #542437;
+  color: #bb8a24;
   padding-top: 6px;
   text-align: center;
   }
