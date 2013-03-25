@@ -3,11 +3,12 @@ tagline: 'for Scripture &amp; Theology'
 
 markdown: pandoc
 pandoc:
-  skip: false
+  skip: true
   flags: '--smart'
   outputs:
     - pdf: '--latex-engine=xelatex'
     - markdown
     - epub
+markdown: rdiscount
 
 # permalink: /reviews/:title
