@@ -3,22 +3,21 @@ Lente.net
 
 Lente.net is the open-access press behind the Journal for Scripture &
 Theology. The word is a Latin adverb meaning "slowly," as in the old
-saying and oxymoron *festina lente*: make haste slowly. Since it's an
-internet publication, the *festina* part is taken as read.
+oxymoron *festina lente*: make haste slowly. Since it's an internet
+publication, the *festina* part is taken as read.
 
 Technical Details
 -----------------
 
 For the sake of access and durability, the site's code and the
 contents of its publications are released on GitHub. This has several
-benefits, and it is one of the factors behind the decision to compile
-the site with [Jekyll][jekyll], the static site generator used to
-build GitHub pages.
+benefits. It is also a factor in the decision to compile the site with
+[Jekyll][jekyll], the static site generator used to build GitHub pages.
 
 [Pandoc][pandoc] is another key component (its [source][jgm]). It
 allows the editors to automatically transform plain-text files written
-in [markdown][df] --- or, to be precise, a [superset of markdown][pandoc-md]
-with enhancements useful for academic writing --- into a variety of
+in [markdown][df] -- or, to be precise, a [superset of markdown][pandoc-md]
+with enhancements useful for academic writing -- into a variety of
 formats, including HTML, PDF (via LaTeX), and ePub.
 
 Jekyll does not support pandoc natively, which unfortunately means
@@ -30,21 +29,21 @@ when multiple formats are requested. It is generally not desirable to
 use the plugin while running `$ jekyll --server --auto`.
 
 LaTeX is an *éminence grise* in open-source software, and it is widely
-used in the academy --- though still not very often in biblical and
-theological studies. It allows one to produce photo-ready PDFs of very
-high quality. (It works on all major platforms. Mac users, get 
-[MacTeX][mactex].) Thanks to pandoc, it can take a much simplified 
-markdown file as an input as well.
+used in the academy -- though only rarely in biblical and theological
+studies. It allows one to produce photo-ready PDFs of high quality and
+to precise specifications. (It works on all major platforms. Mac
+users, get [MacTeX][mactex].) Thanks to pandoc, it can take a much
+simplified markdown file as an input as well.
 
 For digital machinery, then, Lente.net relies on the following:
 
   * git (version control)
-  * jekyll (site generator)
+  * jekyll (static site generator)
   * pandoc (article format conversion)
   * LaTeX (generation of PDFs)
 
 Finally, the publication uses David Březina's [Skolar typeface][skolar]
-in the generation of its PDFs, and also licences it for web display. This
+in the generation of its PDFs, and also licences it for web use. This
 is the only aspect of the site that is not open source.
 
 [jekyll]: https://github.com/mojombo/jekyll
@@ -65,5 +64,5 @@ of an article, and it calls on assets in the ./-/ folder.
 
 Thanks for any input!
 
-Daniel Driver
+Daniel Driver,  
 26 March 2013
