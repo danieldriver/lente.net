@@ -125,7 +125,7 @@ nav li a {
   text-align: center;
   text-decoration: none;
   overflow: hidden;
-  color: #eebd34;
+  color: #cb9a44; /* shade of yellow earth */
   }
 nav li a:active, nav li a:hover, header nav li a.active {
   color: #c63d2a;
