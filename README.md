@@ -60,7 +60,7 @@ Take a Look Without the Dependencies
 
 Friends with web development skills, I'd welcome your help.
 Take a look at `demo.html`, in the root directory. It's a pre-compiled mockup
-of an article, and it calls on `screen.css` and other assets in the `-` folder.
+of an article, and it calls on `screen.css` and other files in the `assets` folder.
 
 ### How best to position footnotes as margin notes?
 

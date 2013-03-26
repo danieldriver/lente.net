@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{site.title}}{% unless page.title %}, {{ site.tagline }}{% endunless %}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lente.net is the open-access press behind the Journal for Scripture &amp; Theology. Lente, as in the old saying festina lente: make haste slowly.">
-  <meta name="author" content="Daniel R. Driver">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{site.title}}{% unless page.title %}, {{ site.tagline }}{% endunless %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lente.net is the open-access press behind the Journal for Scripture &amp; Theology. Lente, as in the old saying festina lente: make haste slowly.">
+    <meta name="author" content="Daniel R. Driver">
 
-  <link rel="stylesheet" media="screen, projection" href="/-/css/screen.css">
-  <script src="/-/js/modernizr-2.6.2.min.js"></script>
-</head>
+    <link rel="stylesheet" media="screen, projection" href="/assets/css/screen.css">
+    
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 <body>
   <div class="container">
-
     <header class="group" role="banner">
       <div id="logo">
-        <a href="/"><img src="/-/img/lente.png" alt="Lente.net"></img></a>
+        <a href="/"><img src="/assets/img/lente.png" alt="Lente.net"></img></a>
       </div>
       <nav role="navigation">
         <ul>
           <li><a {% if page.url contains '/jst/' %}class="active" {% endif %}href="/jst/"><i>JST</i> <small>A Refereed Journal</small></a></li>
-          <li><a {% if page.url contains '/reviews/' %}class="active" {% endif %}href="/reviews/"><i>Reviews</i> <small>Topical Books</small></a></li>
-          <li><a {% if page.url contains '/reading/' %}class="active" {% endif %}href="/reading/"><i>Reading</i> <small>Bibliographies</small></a></li>
+          <li><a {% if page.url contains '/books/' %}class="active" {% endif %}href="/books/"><i>Books</i> <small>Topical Reviews</small></a></li>
+          <li><a {% if page.url contains '/lists/' %}class="active" {% endif %}href="/lists/"><i>Lists</i> <small>Bibliographies</small></a></li>
           <li><a {% if page.url contains '/notes/' %}class="active" {% endif %}href="/notes/"><i>Notes</i> <small>News, Notanda</small></a></li>
         </ul>
       </nav>
@@ -29,13 +31,10 @@
 
 {{content}}
 
-  </div><!-- /container -->
-
-  <footer class="group">
-    <div class="container">
+    <footer class="group">
       <p>Design and content by Daniel R. Driver. <a href="#copy">Copyright tk</a>. Festina lente: make haste slowly.</p>
-    </div>
-  </footer>
+    </footer>
+  </div><!-- /container -->
 
   <!-- Let b stand for border. -->
   <b id="top"></b>
@@ -43,11 +42,10 @@
   <b id="left"></b>
   <b id="right"></b>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/-/js/jquery-1.9.1.min.js"><\/script>')</script>
-  <script src="/-/js/plugins.js"></script>
-  <script src="/-/js/main.js"></script>
-  <!-- TK Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <!-- Place scripts at the bottom for faster page loads. -->
+  <script src="/assets/js/jquery.js"></script>
+  <script src="/assets/js/custom.js"></script>
+  <!-- TK Google Analytics: change UA-XXXXX-X to the site's ID. -->
   <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
