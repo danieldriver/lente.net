@@ -16,8 +16,8 @@ benefits. It is also a factor in the decision to compile the site with
 
 [Pandoc][pandoc] is another key component (its [source][jgm]). It
 allows the editors to automatically transform plain-text files written
-in [markdown][df] -- or, to be precise, a [superset of markdown][pandoc-md]
-with enhancements useful for academic writing -- into a variety of
+in [markdown][df] &mdash; or, to be precise, a [superset of markdown][pandoc-md]
+with enhancements useful for academic writing &mdash; into a variety of
 formats, including HTML, PDF (via LaTeX), and ePub.
 
 Jekyll does not support pandoc natively, which unfortunately means
@@ -29,7 +29,7 @@ when multiple formats are requested. It is generally not desirable to
 use the plugin while running `$ jekyll --server --auto`.
 
 LaTeX is an *éminence grise* in open-source software, and it is widely
-used in the academy -- though only rarely in biblical and theological
+used in the academy &mdash; though only rarely in biblical and theological
 studies. It allows one to produce photo-ready PDFs of high quality and
 to precise specifications. (It works on all major platforms. Mac
 users, get [MacTeX][mactex].) Thanks to pandoc, it can take a much
@@ -59,8 +59,8 @@ Take a Look Without the Dependencies
 ------------------------------------
 
 Friends with web development skills, I'd welcome your help.
-Take a look at demo.html, in the root directory. It's a pre-compiled mockup
-of an article, and it calls on .css and other assets in the `-` folder.
+Take a look at `demo.html`, in the root directory. It's a pre-compiled mockup
+of an article, and it calls on `screen.css` and other assets in the `-` folder.
 
 ### How best to position footnotes as margin notes?
 
