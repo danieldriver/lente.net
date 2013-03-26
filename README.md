@@ -1,11 +1,13 @@
-# Lente.net
+Lente.net
+=========
 
 Lente.net is the open-access press behind the Journal for Scripture &
 Theology. The word is a Latin adverb meaning "slowly," as in the old
 saying and oxymoron *festina lente*: make haste slowly. Since it's an
 internet publication, the *festina* part is taken as read.
 
-# Technical Details
+Technical Details
+-----------------
 
 For the sake of access and durability, the site's code and the
 contents of its publications are released on GitHub. This has several
@@ -54,11 +56,12 @@ is the only aspect of the site that is not open source.
 [mactex]: http://tug.org/mactex/
 [skolar]: http://www.rosettatype.com/Skolar
 
-# Take a Look Without All the Dependencies
+Take a Look Without the Dependencies
+------------------------------------
 
 For friends of the site with web development skills, I'd welcome your help.
 Take a look at demo.html, in the root directory. It's a pre-compiled mockup
-of an article, and it calls on assets in the /-/ folder.
+of an article, and it calls on assets in the ./-/ folder.
 
 Thanks for any input!
 
