@@ -79,7 +79,7 @@ body {
   color: #212725;
   background: #fefefd; /* shade of yellow earth */
   }
-.container {
+#container {
   width: 732px;
   margin: 0 auto;
   }

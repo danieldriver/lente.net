@@ -13,45 +13,47 @@
       <script src="/assets/js/html5shiv.js"></script>
     <![endif]-->
   </head>
-<body>
-  <div class="container">
-    <header class="group" role="banner">
-      <div id="logo">
-        <a href="/"><img src="/assets/img/lente.png" alt="Lente.net"></img></a>
-      </div>
-      <nav role="navigation">
-        <ul>
-          <li><a {% if page.url contains '/jst/' %}class="active" {% endif %}href="/jst/"><i>JST</i> <small>A Refereed Journal</small></a></li>
-          <li><a {% if page.url contains '/books/' %}class="active" {% endif %}href="/books/"><i>Books</i> <small>Topical Reviews</small></a></li>
-          <li><a {% if page.url contains '/lists/' %}class="active" {% endif %}href="/lists/"><i>Lists</i> <small>Bibliographies</small></a></li>
-          <li><a {% if page.url contains '/notes/' %}class="active" {% endif %}href="/notes/"><i>Notes</i> <small>News, Notanda</small></a></li>
-        </ul>
-      </nav>
-    </header>
+  <body>
+    <div id="container">
+
+      <header class="group" role="banner">
+        <div id="logo">
+          <a href="/"><img src="/assets/img/lente.png" alt="Lente.net"></img></a>
+        </div>
+        <nav role="navigation">
+          <ul>
+            <li><a {% if page.url contains '/jst/' %}class="active" {% endif %}href="/jst/"><i>JST</i> <small>A Refereed Journal</small></a></li>
+            <li><a {% if page.url contains '/books/' %}class="active" {% endif %}href="/books/"><i>Books</i> <small>Topical Reviews</small></a></li>
+            <li><a {% if page.url contains '/lists/' %}class="active" {% endif %}href="/lists/"><i>Lists</i> <small>Bibliographies</small></a></li>
+            <li><a {% if page.url contains '/notes/' %}class="active" {% endif %}href="/notes/"><i>Notes</i> <small>News, Notanda</small></a></li>
+          </ul>
+        </nav>
+      </header>
 
 {{content}}
 
-    <footer class="group">
-      <p>Design and content by Daniel R. Driver. <a href="#copy">Copyright tk</a>. Festina lente: make haste slowly.</p>
-    </footer>
-  </div><!-- /container -->
+      <footer class="group">
+        <p>Design and content by Daniel R. Driver. <a href="#copy">Copyright tk</a>. Festina lente: make haste slowly.</p>
+      </footer>
 
-  <!-- Let b stand for border. -->
-  <b id="top"></b>
-  <b id="bottom"></b>
-  <b id="left"></b>
-  <b id="right"></b>
+    </div><!-- /container -->
 
-  <!-- Place scripts at the bottom for faster page loads. -->
-  <script src="/assets/js/jquery.js"></script>
-  <script src="/assets/js/custom.js"></script>
-  <!-- TK Google Analytics: change UA-XXXXX-X to the site's ID. -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+    <!-- Let b stand for border. -->
+    <b id="top"></b>
+    <b id="bottom"></b>
+    <b id="left"></b>
+    <b id="right"></b>
 
-</body>
+    <!-- Place scripts at the bottom for faster page loads. -->
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/custom.js"></script>
+    <!-- TK Google Analytics: change UA-XXXXX-X to the site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+  </body>
 </html>
