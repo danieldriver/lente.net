@@ -6,8 +6,8 @@ Theology. The word is a Latin adverb meaning "slowly," as in the old
 oxymoron *festina lente*: make haste slowly. Since it's an internet
 publication, the *festina* part is taken as read.
 
-Technical Details
------------------
+Technical Requirements
+----------------------
 
 For the sake of access and durability, the site's code and the
 contents of its publications are released on GitHub. This has several
