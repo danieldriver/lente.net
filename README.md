@@ -58,26 +58,10 @@ is the only aspect of the site that is not open source.
 Take a Look Without the Dependencies
 ------------------------------------
 
-Friends with web development skills, I'd welcome your help.
-Take a look at `demo.html`, in the root directory. It's a pre-compiled mockup
-of an article, and it calls on `screen.css` and other files in the `assets` folder.
-
-### How best to position footnotes as margin notes?
-
-As much as possible I have tried to keep the markup clean, and to avoid any
-scripting cruft. However, I have resorted to jQuery to achieve a particular
-bit of layout.
-
-The goal is to place footnotes in the margin, across from where the footnote anchors
-appear in the body text. This could easily be done with relative and absolute positioning
-*if* the footnotes and the footnote references were not children of the same parent.
-It's not possible if they are siblings, though. Or am I missing something?
-
-There's also the problem of what to do if footnote #n is very long and spills 
-into footnote #n+1. This, too, seems to call for scripting, and its beyond my
-meager experience with javascript / jQuery.
-
-Thanks for any input!
+Friends with web development skills, I'd welcome your comments and
+input. Take a look at `demo.html`, in the root directory. It's a
+pre-compiled mockup of an article, and it calls on `screen.css` and
+other files in the `assets` folder.
 
 Daniel Driver  
-26 March 2013
+27 March 2013
