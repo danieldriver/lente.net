@@ -146,6 +146,7 @@ aside[role="contentinfo"] {
   float: left;
   font-style: italic;
   color: #315065;
+  margin-bottom: 1em;
   }
 section[role="main"] {
   width: 480px;
