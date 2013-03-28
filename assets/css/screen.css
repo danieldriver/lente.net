@@ -2,7 +2,7 @@
 -----------------------------------------------
 Title:   Screen styles for lente.net
 Author:  Daniel R. Driver
-Date:    15 March 2013 (v0.1)
+Date:    28 March 2013 (v0.2)
 ----------------------------------------------- */
 
 /* Reset (Eric Meyer, v2.0)
@@ -36,31 +36,26 @@ table {
 
 /* Colour palette
    --------------
-   976f2a - Yellow Earth
-   eebd34 - Orpiment
-   c63d2a - Vermilion
-   4e8160 - Malachite
-   315065 - Azurite
-   172d42 - Lazurite
-   212725 - Indigo
+   colourlovers.com/palette/292482
+   colourlovers.com/palette/1419658
 ----------------------------------------------- */
 
 a {
-  color: #4e8160;
+  color: #542437;
   }
 a:active, a:hover {
-  color: #315065;
+  color: #d95b43;
   }
 
 ::selection {
-  background: #f4d57c; /* shade of orpiment */
+  background: #dbc9a5;
   text-shadow: none;
   }
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #976f2a;
+  border-top: 1px solid #cdb380;
   margin: 1em 0;
   padding: 0;
   }
@@ -76,8 +71,8 @@ body {
   font-size: 16px;
   line-height: 24px;
   padding: 8px;
-  color: #212725;
-  background: #fefefd; /* shade of yellow earth */
+  color: #031634;
+  background: #f0e9dd;
   }
 #container {
   width: 732px;
@@ -87,7 +82,7 @@ header[role="banner"] {
   height: 72px;
   padding: 24px 0;
   margin-bottom: 24px;
-  border-bottom: 4px solid #976f2a;
+  border-bottom: 4px solid #cdb380;
   text-rendering: optimizelegibility;
   }
 #logo {
@@ -125,10 +120,10 @@ nav li a {
   text-align: center;
   text-decoration: none;
   overflow: hidden;
-  color: #cb9a44; /* shade of yellow earth */
+  color: #542437;
   }
 nav li a:active, nav li a:hover, header nav li a.active {
-  color: #c63d2a;
+  color: #c02942;
   }
 nav li i {
   font-size: 18px;
@@ -145,7 +140,7 @@ aside[role="contentinfo"] {
   width: 228px;
   float: left;
   font-style: italic;
-  color: #315065;
+  color: #036564;
   margin-bottom: 1em;
   }
 section[role="main"] {
@@ -166,18 +161,14 @@ footer {
   text-align: center;
   padding: 19px 0;
   }
-footer a, footer a:active, footer a:visited {
+footer a {
   text-decoration: none;
-  color: #976f2a;
-  }
-footer a:hover {
-  text-decoration: underline;
-  color: #eebd34;
+  color: #036564;
   }
 /* Border - css-tricks.com/body-border/ */
 #top, #bottom,
 #left, #right {
-  background: #976f2a;
+  background: #cdb380;
   position: fixed;
   }
 #top, #bottom {
@@ -198,14 +189,14 @@ footer a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
-  color: #c63d2a;
+  color: #c02942;
   text-rendering: optimizelegibility;
   }
 h1 {
   font-size: 30px;
   line-height: 34px;
   font-weight: bold;
-  color: #172d42;
+  color: #033649;
   }
 h2 + h3, h4, h5 + p, h6 + p {
   margin-top: 24px;
@@ -242,11 +233,11 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   text-transform: none;
   letter-spacing: 0;
   font-size: 13px;
-  color: #976f2a;
+  color: #542437;
   }
 h1 small {
   font-size: 21px;
-  color: #315065;
+  color: #036564;
   }
 h2 small {
   font-size: 18px;
@@ -258,43 +249,42 @@ h3 small {
 header[role="heading"] {
   margin: 48px 0;
   }
-header[role="heading"] h4,
-header[role="heading"] a,
-.byline {
-  color: #976f2a;
+header[role="heading"] h4 {
+  color: #542437;
+  text-decoration: none;
   }
-header[role="heading"] a {
-	color: #c63d2a;
-	}
-
-.byline {
-  padding-top: 24px;
+header[role="heading"] a:hover {
+  text-decoration: underline;
   }
-a.author {
+.byline a {
   font-style: normal;
   text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
   }
-
+.byline a:hover {
+  text-decoration: underline;
+  }
 
 .issue-contents header {
   padding-bottom: 8px;
   margin: 24px 0;
-  border-bottom: 1px solid #976f2a;
-	}
+  border-bottom: 1px solid #cdb380;
+  }
 .issue-contents ul {
-	width: 480px;
-	float: right;
-	}
+  width: 480px;
+  float: right;
+  }
 .issue-contents h2 {
-	display: block;
-	float: left;
-	width: 228px;
-	margin: 0 0 0 -252px;
-	text-transform: none;
-	font-size: 16px;
-	font-style: italic;
-  color: #4e8160;
-	}
+  display: block;
+  float: left;
+  width: 228px;
+  margin: 0 0 0 -252px;
+  text-transform: none;
+  font-size: 16px;
+  font-style: italic;
+  color: #036564;
+  }
 
 
 em {
@@ -333,6 +323,7 @@ aside, .footnotes, footer {
   position: absolute;
   left: -251px;
   bottom: 0;
+  color: #033649;
   }
 .footnotes hr {
   width: 30%;
@@ -366,14 +357,14 @@ aside, .footnotes, footer {
   display: block;
   padding: 4px;
   text-decoration: none;
-  background-color: #ffffff;
-  border: 1px solid #976f2a;
+  background-color: #fff;
+  border: 1px solid #cdb380;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
-  -webkit-box-shadow: 0 1px 3px rgba(23, 45, 66, 0.3);
-     -moz-box-shadow: 0 1px 3px rgba(23, 45, 66, 0.3);
-          box-shadow: 0 1px 3px rgba(23, 45, 66, 0.3);
+  -webkit-box-shadow: 0 1px 3px rgba(3, 54, 73, 0.2);
+     -moz-box-shadow: 0 1px 3px rgba(3, 54, 73, 0.2);
+          box-shadow: 0 1px 3px rgba(3, 54, 73, 0.2);
   -webkit-transition: all 0.2s ease-in-out;
      -moz-transition: all 0.2s ease-in-out;
        -o-transition: all 0.2s ease-in-out;
@@ -381,10 +372,10 @@ aside, .footnotes, footer {
   }
 .bookthumbs > li a:hover,
 .bookthumbs > li a:focus {
-  border-color: #c63d2a;
-  -webkit-box-shadow: 0 1px 4px rgba(49, 80, 101, 0.4);
-     -moz-box-shadow: 0 1px 4px rgba(49, 80, 101, 0.4);
-          box-shadow: 0 1px 4px rgba(49, 80, 101, 0.4);
+  border-color: #c02942;
+  -webkit-box-shadow: 0 1px 4px rgba(3, 101, 100, 0.4);
+     -moz-box-shadow: 0 1px 4px rgba(3, 101, 100, 0.4);
+          box-shadow: 0 1px 4px rgba(3, 101, 100, 0.4);
   }
 .bookthumbs > li a img {
   display: block;
@@ -394,7 +385,7 @@ aside, .footnotes, footer {
   }
 .bookthumbs > li a .caption {
   font-style: normal;
-  color: #315065;
+  color: #033649;
   padding-top: 6px;
   text-align: center;
   }
@@ -409,10 +400,10 @@ aside, .footnotes, footer {
 .group:after {
   content: " "; /* 1 */
   display: table; /* 2 */
-}
+  }
 .group:after {
   clear: both;
-}
+  }
 .group {
   *zoom: 1;
-}
+  }
