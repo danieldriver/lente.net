@@ -74,4 +74,4 @@ Roadmap
 - [ ] v0.5 - using `pandoc.rb`, integrate Jekyll with LaTeX and other outputs
 - [ ] v0.6 - customize LaTeX typesetting (Skolar, ragged right, margin notes)
 - [ ] v0.7 - integrate metadata with CrossRef DOIs
-- [ ] v0.8 - tk
+- [ ] v0.8 - launch beta version of website at [www.lente.net](http://www.lente.net)
