@@ -63,5 +63,15 @@ input. Take a look at `demo.html`, in the root directory. It's a
 pre-compiled mockup of an article, and it calls on `screen.css` and
 other files in the `assets` folder.
 
-Daniel Driver  
-27 March 2013
+
+Roadmap
+-------
+
+- [x] v0.1 - block out basic design elements, bring over reviews from  @scripturetheology
+- [x] v0.2 - finalize basic design elements, set up mechanics for book reviews
+- [ ] v0.3 - set up JST articles
+- [ ] v0.4 - set up notes
+- [ ] v0.5 - set up reading lists
+- [ ] v0.6 - add LaTeX templates
+- [ ] v0.7 - integrate metadata with CrossRef DOIs
+- [ ] v0.8 - tk
