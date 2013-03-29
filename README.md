@@ -68,10 +68,10 @@ Roadmap
 -------
 
 - [x] v0.1 - block out basic design elements, bring over reviews from  @scripturetheology
-- [x] v0.2 - finalize basic design elements, set up mechanics for book reviews
-- [ ] v0.3 - set up JST articles
-- [ ] v0.4 - set up notes
-- [ ] v0.5 - set up reading lists
-- [ ] v0.6 - add LaTeX templates
+- [x] v0.2 - finalize basic design elements, set up Jekyll to process book reviews
+- [ ] v0.3 - build out web side of remaing publication types: articles, notes, lists
+- [ ] v0.4 - create HTML indexes for site and each publication type
+- [ ] v0.5 - using `pandoc.rb`, integrate Jekyll with LaTeX and other outputs
+- [ ] v0.6 - customize LaTeX typesetting (Skolar, ragged right, margin notes)
 - [ ] v0.7 - integrate metadata with CrossRef DOIs
 - [ ] v0.8 - tk
