@@ -4,18 +4,30 @@ title: Books Under Review
 ---
 
       <div class="banner">
-        <h1>Books <small>under</small> Review</h1>
-        <p>A project of the Wycliffe Centre for Scripture and Theology, the <em>Journal for Scripture &amp; Theology</em> aims to advance the intellectual renewal of Scriptural and Theological study as a mutually informing discipline in the service of the Christian Church.</p>
-        <div class="navbar">
-          <div class="group">
-            <ul class="nav">
-              <li><a href="#">Issues</a></li>
-              <li class="active"><a href="#">About JST</a></li>
-              <li><a href="#">Editorial Board</a></li>
-              <li><a href="#">Policies</a></li>
-            </ul>
-          </div>
-        </div>
+        <h1>{{page.title}}</h1>
+        <p>Qualified readers are invited to submit unsolicited reviews of books they regard as the best scholarship they have read in the last two or three years, regardless of publication date. Otherwise, reviews of recent titles will generally be solicited by the editors. Our latest:</p>
+        <ul class="bookthumbs group">
+          <li>
+            <a href="#">
+              <img alt="Psalms as Torah: Reading Biblical Song Ethically" src="http://images.amazon.com/images/P/B006T46O24.jpg">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img alt="Simon Peter in Scripture and Memory: The New Testament Apostle in the Early Church" src="http://images.amazon.com/images/P/B009XE6EVI.jpg">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img alt="The Death of Scripture and the Rise of Biblical Studies" src="http://images.amazon.com/images/P/B0055NCUHS.jpg">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img alt="The Bible Made Impossible" src="http://images.amazon.com/images/P/B008L014R4.jpg">
+            </a>
+          </li>
+        </ul>
       </div>
 
 {% assign contents = site.categories.books %}{% include arrange/contents %}

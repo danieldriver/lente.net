@@ -314,8 +314,9 @@ header[role="heading"] a:hover {
 .banner h1 small {
   display: block;
   font-style: italic;
-  color: #036564;
   font-size: 24px;
+  text-transform: lowercase;
+  color: #036564;
   }
 .banner p {
   text-indent: 0;
@@ -327,36 +328,36 @@ header[role="heading"] a:hover {
   margin-top: 24px;
   margin-bottom: 0;
   }
-.banner-aqua h1,
-.banner-profunda h1,
-.banner-abyss h1 {
-  color: #cc8800;
-  }
-.banner-aqua h1 em,
-.banner-profunda h1 em,
-.banner-abyss h1 em {
-  color: #cdb380;
-  }
 .banner-aqua,
-.banner-profunda {
+.banner-profunda,
+.banner-ionian {
   color: #e8ddcb;
   }
-.banner-aqua h1 small,
-.banner-profunda h1 small {
-  color: #ecd078;
+.banner-aqua h1,
+.banner-profunda h1,
+.banner-ionian h1 {
+  color: #cc8800;
   }
 .banner-aqua {
   background-color: #036564;
   }
+.banner-aqua h1 small {
+  color: #ecd078;
+  }
 .banner-profunda {
   background-color: #033649;
   }
-.banner-abyss {
+.banner-profunda h1 small {
   color: #cdb380;
-  background-color: #031634;
   }
-.banner-abyss h1 small {
+.banner-profunda h1 em {
   color: #c02942;
+  }
+.banner-ionian {
+  background-color: #53777a;
+  }
+.banner-ionian h1 small {
+  color: #542437;
   }
 
 /* Paragraphs & paragraph elements
@@ -421,13 +422,11 @@ aside, .footnotes, footer {
 /* Book thumbnails
 ----------------------------------------------- */
 
-.bookthumbs {
-  /* margin-left: -24px; */
+.bookthumbs p {
   }
 .bookthumbs > li {
   float: left;
   margin-top: 24px;
-  /* margin-left: 24px; */
   }
 .bookthumbs > li a {
   display: block;
@@ -464,6 +463,17 @@ aside, .footnotes, footer {
   color: #033649;
   padding-top: 6px;
   text-align: center;
+  }
+
+.banner .bookthumbs {
+  width: 100%;
+  }
+.banner .bookthumbs > li {
+  width: 150px;
+  margin-left: 12px;
+  }
+.banner .bookthumbs > li:first-child {
+  margin-left: 0;
   }
 
 /* Miscellaneous

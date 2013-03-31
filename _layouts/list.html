@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+      <article class="group">
+        <header role="heading">
+          <h1>This is a list.</h1>
+          <h4 class="byline">By <a class="author" href="#">Daniel R. Driver</a>, published on <time datetime="{{page.date | date: '%Y-%m-%d'}}">{{page.date | date: '%d %B %Y'}}</time>.</h4>
+        </header>
+
+        <aside role="contentinfo">
+          <p>This is an aside for links and information about the article (like its DOI and where to find the source on GitHub).</p>
+        </aside>
+  
+        <section role="main">
+
+{{content}}
+
+        </section>
+      </article>

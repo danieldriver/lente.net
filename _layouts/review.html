@@ -12,7 +12,7 @@ layout: default
 
       <aside role="contentinfo">
 
-        <p class="byline">Reviewed by <a class="author" href="#">{{page.author}}</a>, published on <time>{{page.date | date: "%d %B %Y"}}</time>.</p>
+        <p class="byline">Reviewed by <a class="author" href="#">{{page.author}}</a>, published on <time datetime="{{page.date | date: '%Y-%m-%d'}}">{{page.date | date: '%d %B %Y'}}</time>.</p>
 
         <ul class="bookthumbs group">
           {%for book in page.books%}
