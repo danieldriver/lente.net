@@ -193,89 +193,84 @@ footer a:hover {
 ----------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 18px;
   color: #c02942;
   text-rendering: optimizelegibility;
   }
 h1 {
-  font-size: 30px;
-  line-height: 34px;
+  font-size: 32px;
+  line-height: 38px;
   font-weight: bold;
   color: #033649;
   }
-h2 + h3, h4, h5 + p, h6 + p {
-  margin-top: 24px;
-  }
-h2, h3, h4 {
-  margin-bottom: 24px;
-  }
 h2 {
-  font-size: 21px;
   text-transform: uppercase;
   letter-spacing: 1px;
-	}
+  }
 p + h2 {
   padding-top: 72px;
   margin-top: -24px;
   }
-h3 {
-  font-size: 21px;
+h2, h3 {
+  font-size: 20px;
   }
-h3 {
-  margin-top: 33px;
+h2, h3, h4 {
+  margin-bottom: 24px;
+  }
+h3, h4, h5 + p, h6 + p {
+  margin-top: 24px;
   }
 h4 {
   font-style: italic;
   }
 h5, h6 {
   display: run-in;
-  font-size: 16px;
   font-weight: bold;
   padding-right: 1em;
   }
 h6 {
   margin-left: 24px;
   }
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 13px;
+h1 small, h2 small, h3 small, h4 small {
   color: #542437;
   }
 h1 small {
-  font-size: 21px;
+  font-size: 20px;
   color: #036564;
   }
 h2 small {
-  font-size: 18px;
+  font-size: 16px;
+  text-transform: none;
+  letter-spacing: 0;
   }
 h3 small {
   font-size: 16px;
   }
-
+h4 small {
+  font-size: 13px;
+  }
 section[role="main"] {
-	counter-reset: section;
-	}
+  counter-reset: section;
+  }
 section[role="main"] h2:before {
-	content: counter(section) ".\2003";
-	counter-increment: section;
-	}
+  content: counter(section) ".\2003";
+  counter-increment: section;
+  }
 section[role="main"] h2 {
-	counter-reset: subsection;
+  counter-reset: subsection;
   }
 section[role="main"] h3:before {
-	content: counter(section) "." counter(subsection) ".\2002";
-	counter-increment: subsection;
-	}
+  content: counter(section) "." counter(subsection) ".\2002";
+  counter-increment: subsection;
+  }
 section[role="main"] h3 {
-	counter-reset: subsubsection;
-	}
+  counter-reset: subsubsection;
+  }
 section[role="main"] h4:before {
-	content: counter(section) "." counter(subsection) "." counter(subsubsection) ".\2002";
-	counter-increment: subsubsection;
-	font-style: normal;
-	}
-
+  content: counter(section) "." counter(subsection) "." counter(subsubsection) ".\2002";
+  counter-increment: subsubsection;
+  font-style: normal;
+  }
+/* Headers */
 header[role="heading"] {
   margin: 48px 0;
   }
