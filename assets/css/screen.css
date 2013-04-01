@@ -224,14 +224,14 @@ h3 {
 h3 {
   margin-top: 33px;
   }
-h4, h5, h6 {
+h4 {
   font-style: italic;
   }
 h5, h6 {
   display: run-in;
   font-size: 16px;
-  padding-right: 24px;
   font-weight: bold;
+  padding-right: 1em;
   }
 h6 {
   margin-left: 24px;
@@ -257,22 +257,23 @@ section[role="main"] {
 	counter-reset: section;
 	}
 section[role="main"] h2:before {
-	content: counter(section) ". ";
+	content: counter(section) ".\2003";
 	counter-increment: section;
 	}
 section[role="main"] h2 {
 	counter-reset: subsection;
   }
 section[role="main"] h3:before {
-	content: counter(section) "." counter(subsection) ". ";
+	content: counter(section) "." counter(subsection) ".\2002";
 	counter-increment: subsection;
 	}
 section[role="main"] h3 {
 	counter-reset: subsubsection;
 	}
 section[role="main"] h4:before {
-	content: counter(section) "." counter(subsection) "." counter(subsubsection) ". ";
+	content: counter(section) "." counter(subsection) "." counter(subsubsection) ".\2002";
 	counter-increment: subsubsection;
+	font-style: normal;
 	}
 
 header[role="heading"] {
