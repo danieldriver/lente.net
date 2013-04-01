@@ -209,15 +209,17 @@ h2 + h3, h4, h5 + p, h6 + p {
 h2, h3, h4 {
   margin-bottom: 24px;
   }
-h2, h3 {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  }
 h2 {
   font-size: 21px;
-  }
+  text-transform: uppercase;
+  letter-spacing: 1px;
+	}
 p + h2 {
-  margin-top: 48px;
+  padding-top: 72px;
+  margin-top: -24px;
+  }
+h3 {
+  font-size: 21px;
   }
 h3 {
   margin-top: 33px;
@@ -250,6 +252,28 @@ h2 small {
 h3 small {
   font-size: 16px;
   }
+
+section[role="main"] {
+	counter-reset: section;
+	}
+section[role="main"] h2:before {
+	content: counter(section) ". ";
+	counter-increment: section;
+	}
+section[role="main"] h2 {
+	counter-reset: subsection;
+  }
+section[role="main"] h3:before {
+	content: counter(section) "." counter(subsection) ". ";
+	counter-increment: subsection;
+	}
+section[role="main"] h3 {
+	counter-reset: subsubsection;
+	}
+section[role="main"] h4:before {
+	content: counter(section) "." counter(subsection) "." counter(subsubsection) ". ";
+	counter-increment: subsubsection;
+	}
 
 header[role="heading"] {
   margin: 48px 0;
@@ -497,7 +521,7 @@ aside, .footnotes, footer {
 
 .navbar {
   overflow: visible;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
   *position: relative;
   *z-index: 2;
   }

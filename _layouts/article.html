@@ -4,11 +4,22 @@ layout: default
 
       <article class="group">
         <header role="heading">
-          <h1>This is an article.</h1>
-          <h4 class="byline">By <a class="author" href="#">Daniel R. Driver</a>, published on <time datetime="{{page.date | date: '%Y-%m-%d'}}">{{page.date | date: '%d %B %Y'}}</time>.</h4>
+          <h1>{{page.title}}</h1>
+          <h4 class="byline">By <a class="author" href="#">{{page.author}}</a>, published on <time datetime="{{page.date | date: '%Y-%m-%d'}}">{{page.date | date: '%d %B %Y'}}</time>.</h4>
         </header>
-
+				{%if page.sections%}
+        <div class="navbar">
+          <div class="group">
+            <ul class="nav">
+              {%for section in page.sections%}
+              <li><a href="#{{section.id}}">{{forloop.index}}. {{section.name}}</a></li>
+              {%endfor%}
+            </ul>
+          </div>
+        </div>
+				{%endif%}
         <aside role="contentinfo">
+          {%if page.aside%}<p>{{page.aside}}</p>{%endif%}
           <p>This is an aside for links and information about the article (like its DOI and where to find the source on GitHub).</p>
         </aside>
   
