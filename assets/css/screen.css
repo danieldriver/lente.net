@@ -170,9 +170,8 @@ footer a:hover {
   text-decoration: underline;
   color: #c02942;
   }
-/* Border - css-tricks.com/body-border/ */
 #top, #bottom,
-#left, #right {
+#left, #right { /* css-tricks.com/body-border/ */
   background: #cdb380;
   position: fixed;
   }
@@ -189,7 +188,7 @@ footer a:hover {
   #left { left: 0; }
   #right { right: 0; }
 
-/* Headings
+/* Headings & display text elements
 ----------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
@@ -270,7 +269,9 @@ section[role="main"] h4:before {
   counter-increment: subsubsection;
   font-style: normal;
   }
+
 /* Headers */
+
 header[role="heading"] {
   margin: 48px 0;
   }
@@ -311,8 +312,7 @@ header[role="heading"] a:hover {
   color: #036564;
   }
 
-/* Banners
------------------------------------------------ */
+/* Banners */
 
 .banner {
   padding: 48px;
@@ -380,7 +380,7 @@ header[role="heading"] a:hover {
   color: #542437;
   }
 
-/* Paragraphs & paragraph elements
+/* Paragraphs & body text elements
 ----------------------------------------------- */
 
 
