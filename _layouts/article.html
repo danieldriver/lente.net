@@ -7,8 +7,8 @@ layout: default
           <h1>{{page.title}}</h1>
           <h4 class="byline">By <a class="author" href="#">{{page.author}}</a>, published on <time datetime="{{page.date | date: '%Y-%m-%d'}}">{{page.date | date: '%d %B %Y'}}</time>.</h4>
         </header>
-				{%if page.sections%}
-        <div class="navbar">
+        {%if page.sections%}
+        <div class="navbar" data-spy="affix" data-offset-top="314">
           <div class="group">
             <ul class="nav">
               {%for section in page.sections%}
@@ -17,7 +17,7 @@ layout: default
             </ul>
           </div>
         </div>
-				{%endif%}
+        {%endif%}
         <aside role="contentinfo">
           {%if page.aside%}<p>{{page.aside}}</p>{%endif%}
           <p>This is an aside for links and information about the article (like its DOI and where to find the source on GitHub).</p>

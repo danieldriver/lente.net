@@ -206,8 +206,8 @@ h2 {
   letter-spacing: 1px;
   }
 p + h2 {
-  padding-top: 72px;
-  margin-top: -24px;
+  padding-top: 96px;
+  margin-top: -48px;
   }
 h2, h3 {
   font-size: 20px;
@@ -581,4 +581,10 @@ aside, .footnotes, footer {
   -webkit-box-shadow: inset 0 3px 8px rgba(3, 22, 52, 0.125);
   -moz-box-shadow: inset 0 3px 8px rgba(3, 22, 52, 0.125);
   box-shadow: inset 0 3px 8px rgba(3, 22, 52, 0.125);
+  }
+.affix {
+  position: fixed;
+  width: 732px;
+  top: 24px;
+  z-index: 10;
   }
