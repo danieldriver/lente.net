@@ -41,10 +41,10 @@ table {
 ----------------------------------------------- */
 
 a {
-  color: #036564;
+  color: #c02942;
   }
 a:active, a:hover {
-  color: #033649;
+  color: #d95b43;
   }
 
 ::selection {
@@ -83,7 +83,6 @@ header[role="banner"] {
   padding: 24px 0;
   margin-bottom: 24px;
   border-bottom: 4px solid #cdb380;
-  text-rendering: optimizelegibility;
   }
 #logo {
   float: left;
@@ -114,9 +113,8 @@ nav li {
   }
 nav li a {
   display: block;
-  height: 36px;
-  padding: 20px 0 16px;
-  line-height: 18px;
+  height: 40px;
+  padding: 20px 0 12px;
   text-align: center;
   text-decoration: none;
   overflow: hidden;
@@ -126,13 +124,15 @@ nav li a:active, nav li a:hover, header nav li a.active {
   color: #c02942;
   }
 nav li i {
-  font-size: 16px;
+  font-size: 21px;
+  line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 1px;
   }
 nav li small {
   display: block;
   font-size: 13px;
+  line-height: 13px;
   }
 
 
@@ -193,27 +193,48 @@ footer a:hover {
 ----------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-  color: #c02942;
+  color: #542437;
   text-rendering: optimizelegibility;
   }
 h1 {
+  font-size: 36px;
+  line-height: 1.1666;
   color: #033649;
+  }
+h1 small {
   font-size: 21px;
+  color: #036564;
   }
 article h1 {
   font-size: 48px;
-  line-height: 54px;
+  line-height: 1.125;
+  }
+article h1 small {
+  font-size: 36px;
   }
 h2, h3, h4 {
+  font-size: 21px;
   margin-bottom: 24px;
   }
 h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   }
+h2 small, header h2 {
+  text-transform: none;
+  letter-spacing: 0;
+  }
+header h2 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #033649;
+  }
+h1 + h2 {
+  margin-top: 48px;
+  }
 p + h2 {
-  padding-top: 96px;
-  margin-top: -48px;
+  padding-top: 144px;
+  margin-top: -96px;
   }
 h3, h4, h5 + p, h6 + p {
   margin-top: 24px;
@@ -223,26 +244,17 @@ h4 {
   }
 h5, h6 {
   display: run-in;
-  font-weight: bold;
+  font-weight: 600;
   padding-right: 1em;
-  color: #542437;
   }
 h6 {
   margin-left: 24px;
   }
-h1 small, h2 small, h3 small, h4 small {
-  color: #542437;
-  }
-h1 small {
+h2 small, h3 small, h4 small {
   font-size: 16px;
-  color: #036564;
   }
-h2 small, h3 small, h4 small, h5 small, h6 small {
+h5 small, h6 small {
   font-size: 13px;
-  }
-h2 small {
-  text-transform: none;
-  letter-spacing: 0;
   }
 section[role="main"] {
   counter-reset: section;
@@ -272,7 +284,10 @@ section[role="main"] h4:before {
 header[role="heading"] {
   margin: 48px 0;
   }
-header[role="heading"] h4 {
+header .byline {
+  padding-top: 24px;
+  }
+.byline {
   color: #542437;
   }
 .byline a {
@@ -322,10 +337,6 @@ header[role="heading"] h4 {
           border-radius: 6px;
   }
 .banner h1 {
-  margin-bottom: 0;
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 1.1;
   color: #033649;
   }
 .banner h1 small {
@@ -403,7 +414,7 @@ section[role="main"] p:last-child:after {
 
 aside, .footnotes, footer {
   font-size: 13px;
-  line-height: 19px;
+  line-height: 20px;
   }
 
 
@@ -412,6 +423,20 @@ aside, .footnotes, footer {
 /* Footnotes
 ----------------------------------------------- */
 
+sub, sup {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 0;
+  }
+sub a, sup a {
+  text-decoration: none;
+  }
+sup {
+  vertical-align: super;
+  }
+sub {
+  vertical-align: sub;
+  }
 .footnotes {
   width: 228px;
   position: absolute;
@@ -435,6 +460,11 @@ aside, .footnotes, footer {
 .footnotes li p + p {
   text-indent: 1em;
   }
+.footnotes [id*="fn"] {
+  padding-top: 144px;
+  margin-top: -141px;
+  }
+
 
 /* Book thumbnails
 ----------------------------------------------- */
@@ -443,7 +473,7 @@ aside, .footnotes, footer {
   }
 .bookthumbs > li {
   float: left;
-  margin-top: 24px;
+  margin-bottom: 24px;
   }
 .bookthumbs > li a {
   display: block;

@@ -11,4 +11,4 @@ pandoc:
     - epub
 markdown: rdiscount
 
-permalink: /:categories/:year/:month:day.:title.html
+permalink: /:categories/:year/:month:day/:title.html

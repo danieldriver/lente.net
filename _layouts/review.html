@@ -4,27 +4,25 @@ layout: default
 
     <article class="group">
       <header role="heading">
+        {%if page.review-title%}<h1>{{page.review-title}}</h1>{%endif%}
         {%for book in page.books%}
-        <h1><em>{{book.title}}{%if book.subtitle%}: {{book.subtitle}}{%endif%}</em>, by {{book.author}}</h1>
-        <h4>{%if book.series%}{{book.series}}. {%endif%}{{book.publisher}}: {{book.city}}, {{book.year}}.{%if book.pages%} Pp. {{book.pages}}.{%endif%}{%if book.price%} {{book.price}}.{%endif%}</h4>
+        <h2><em>{{book.title}}{%if book.subtitle%}: {{book.subtitle}}{%endif%}</em>, by {{book.author}}</h2>
+        <h3>{%if book.series%}{{book.series}}. {%endif%}{{book.publisher}}: {{book.city}}, {{book.year}}.{%if book.pages%} Pp. {{book.pages}}.{%endif%}{%if book.price%} {{book.price}}.{%endif%}</h3>
         {%endfor%}
+        <p class="byline">Reviewed by <a class="author" href="#">{{page.author}}</a>, published on <time datetime="{{page.date | date: '%Y-%m-%d'}}">{{page.date | date: '%d %B %Y'}}</time>.</p>
       </header>
 
       <aside role="contentinfo">
-
-        <p class="byline">Reviewed by <a class="author" href="#">{{page.author}}</a>, published on <time datetime="{{page.date | date: '%Y-%m-%d'}}">{{page.date | date: '%d %B %Y'}}</time>.</p>
-
         <ul class="bookthumbs group">
           {%for book in page.books%}
           <li>
             <a href="#">
               <img alt="{{book.title}}" src="http://images.amazon.com/images/P/{{book.asin}}.jpg">
-              <p class="caption">isbn {{book.isbn}}</p>
+              <p class="caption">Search on amazon.com.</p>
             </a>
           </li>
           {%endfor%}
         </ul>
-
       </aside>
 
       <section role="main">
