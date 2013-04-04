@@ -142,7 +142,7 @@ aside[role="contentinfo"] {
   float: left;
   font-style: italic;
   color: #036564;
-  margin-bottom: 1em;
+  margin: 3px 0 1em;
   }
 section[role="main"] {
   width: 480px;
