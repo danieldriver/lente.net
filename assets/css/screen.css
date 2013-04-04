@@ -106,6 +106,7 @@ header[role="banner"] {
 nav {
   float: left;
   width: 480px;
+  text-rendering: optimizelegibility;
   }
 nav li {
   float: left;
@@ -124,15 +125,13 @@ nav li a:active, nav li a:hover, header nav li a.active {
   color: #c02942;
   }
 nav li i {
-  font-size: 21px;
-  line-height: 21px;
+  font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 1px;
   }
 nav li small {
   display: block;
   font-size: 13px;
-  line-height: 13px;
+  line-height: 1em;
   }
 
 
@@ -197,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility;
   }
 h1 {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.1666;
   color: #033649;
   }
@@ -213,12 +212,11 @@ article h1 small {
   font-size: 36px;
   }
 h2, h3, h4 {
-  font-size: 21px;
+  font-size: 18px;
   margin-bottom: 24px;
   }
 h2 {
   text-transform: uppercase;
-  letter-spacing: 1px;
   }
 h2 small, header h2 {
   text-transform: none;
@@ -347,15 +345,14 @@ header .byline {
 .banner h1 small {
   display: block;
   font-style: italic;
-  font-size: 21px;
   text-transform: lowercase;
   color: #036564;
   }
 .banner p {
   text-indent: 0;
-  font-size: 21px;
-  line-height: 30px;
-  margin-top: 24px;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 1em;
   }
 .banner .navbar {
   margin-top: 24px;
