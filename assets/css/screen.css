@@ -464,6 +464,9 @@ sub {
   padding-top: 144px;
   margin-top: -141px;
   }
+.footnotes li:first-child {
+  z-index: -1;
+  }
 
 
 /* Book thumbnails
