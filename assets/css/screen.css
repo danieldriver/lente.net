@@ -517,7 +517,7 @@ sub {
   }
 .banner .bookthumbs > li {
   width: 150px;
-  margin-left: 12px;
+  margin: 24px 0 0 12px;
   }
 .banner .bookthumbs > li:first-child {
   margin-left: 0;
