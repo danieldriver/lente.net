@@ -67,11 +67,4 @@ other files in the `assets` folder.
 Roadmap
 -------
 
-- [x] v0.1 - block out basic design elements, bring over reviews from  @scripturetheology
-- [x] v0.2 - finalize basic design elements, set up Jekyll to process book reviews
-- [ ] v0.3 - build out web side of remaing publication types: articles, notes, lists
-- [ ] v0.4 - create HTML indexes for site and each publication type
-- [ ] v0.5 - using `pandoc.rb`, integrate Jekyll with LaTeX and other outputs
-- [ ] v0.6 - customize LaTeX typesetting (Skolar, ragged right, margin notes)
-- [ ] v0.7 - integrate metadata with CrossRef DOIs
-- [ ] v0.8 - launch beta version of website at [www.lente.net](http://www.lente.net)
+The first milestone is to get out a [live draft (v0.8)](https://github.com/danieldriver/lente.net/issues?milestone=4&state=open) in time for the May 2013 meeting of WCST.
