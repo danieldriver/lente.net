@@ -534,88 +534,55 @@ sub {
 .group:before,
 .group:after {
   display: table;
-  line-height: 0;
-  content: "";
+  content: " ";
   }
 .group:after {
   clear: both;
   }
-.group {
-  *zoom: 1;
-  }
 
-/* Navbar (thx @mdo and @fat)
+/* Navbar
 ----------------------------------------------- */
 
-.navbar {
-  overflow: visible;
-  margin-bottom: 48px;
-  *position: relative;
-  *z-index: 2;
-  }
-.navbar .group {
-  min-height: 24px;
-  background-color: #dbc8a6;
-  background-image: -moz-linear-gradient(top, #e8ddcb, #cdb380);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e8ddcb), to(#cdb380));
-  background-image: -webkit-linear-gradient(top, #e8ddcb, #cdb380);
-  background-image: -o-linear-gradient(top, #e8ddcb, #cdb380);
-  background-image: linear-gradient(to bottom, #e8ddcb, #cdb380);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8ddcb', endColorstr='#ffcdb380', GradientType=0);
-  border: 1px solid #c6a86e;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 4px rgba(3, 22, 52, 0.1);
-  -moz-box-shadow: 0 1px 4px rgba(3, 22, 52, 0.1);
-  box-shadow: 0 1px 4px rgba(3, 22, 52, 0.1);
-  *zoom: 1;
-  }
 .navbar .nav {
-  display: table;
   width: 100%;
+  height: 22px;
+  margin-bottom: 48px;
+  border-radius: 5px;
+  border: 1px solid #cdb380;
+  background-color: #dbc8a6;
   }
-.navbar .nav > li {
+.navbar .nav li {
   display: table-cell;
   width: 1%;
-  }
-.navbar .nav > li > a {
-  display: block;
-  color: #036564;
-  font-size: 13px;
-  line-height: 13px;
-  padding: 6px 0 5px;
-  font-weight: bold;
   text-align: center;
+  text-rendering: optimizelegibility;
+  }
+.navbar .nav li a {
+  display: block;
+  font-size: 13px;
+  line-height: 1;
+  padding: 5px 9px 4px;
   text-decoration: none;
-  text-shadow: 0 1px 0 #e8ddcb;
+  color: #036564;
   border-left: 1px solid rgba(232, 221, 203, 0.7);
   border-right: 1px solid rgba(3, 22, 52, 0.1);
   }
-.navbar .nav > li:first-child > a {
+.navbar li a:hover,
+.navbar li a:focus {
+  background-color: #cdb380;
+  }
+.navbar .active a {
+  background-color: #cdb380;
+  }
+.navbar li:first-child a {
   border-left: 0;
-  border-radius: 3px 0 0 3px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   }
-.navbar .nav > li:last-child > a {
+.navbar li:last-child a {
   border-right: 0;
-  border-radius: 0 3px 3px 0;
-  }
-.navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover {
-  background-color: transparent;
-  color: #033649;
-  text-decoration: none;
-  }
-.navbar .nav > .active > a,
-.navbar .nav > .active > a:hover,
-.navbar .nav > .active > a:focus {
-  color: #034e57;
-  text-decoration: none;
-  background-color: #c6a86e;
-  -webkit-box-shadow: inset 0 3px 8px rgba(3, 22, 52, 0.125);
-  -moz-box-shadow: inset 0 3px 8px rgba(3, 22, 52, 0.125);
-  box-shadow: inset 0 3px 8px rgba(3, 22, 52, 0.125);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   }
 .affix {
   position: fixed;

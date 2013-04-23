@@ -9,13 +9,11 @@ layout: default
         </header>
         {%if page.sections%}
         <div class="navbar" data-spy="affix" data-offset-top="330">
-          <div class="group">
-            <ul class="nav">
-              {%for section in page.sections%}
-              <li><a href="#{{section.id}}">&sect; {{forloop.index}}. {{section.name}}</a></li>
-              {%endfor%}
-            </ul>
-          </div>
+          <ul class="nav group">
+            {%for section in page.sections%}
+            <li><a href="#{{section.id}}">{{forloop.index}}. {{section.name}}</a></li>
+            {%endfor%}
+          </ul>
         </div>
         {%endif%}
         <aside role="contentinfo">
