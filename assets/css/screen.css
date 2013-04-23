@@ -134,8 +134,6 @@ nav li small {
   line-height: 1em;
   }
 
-
-
 aside[role="contentinfo"] {
   width: 228px;
   float: left;
@@ -187,6 +185,85 @@ footer a:hover {
   }
   #left { left: 0; }
   #right { right: 0; }
+
+
+/* Paragraphs & body text elements
+----------------------------------------------- */
+
+
+em {
+  font-style: italic;
+  }
+strong {
+  font-weight: 600;
+  }
+
+p {
+  margin: 0;
+  }
+p + p {
+  text-indent: 24px;
+  }
+
+/* 
+section[role="main"] p:last-child:after {
+  content: "\00B6"; 
+  }
+ */
+
+aside, .footnotes, footer {
+  font-size: 13px;
+  line-height: 20px;
+  }
+
+/* Footnotes */
+
+sub, sup {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 0;
+  }
+sub a, sup a {
+  text-decoration: none;
+  }
+sup {
+  vertical-align: super;
+  }
+sub {
+  vertical-align: sub;
+  }
+.footnotes {
+  width: 228px;
+  position: absolute;
+  left: -251px;
+  bottom: 0;
+  color: #033649;
+  }
+.footnotes hr {
+  width: 30%;
+  display: none;
+  }
+.footnotes ol {
+  list-style: decimal inside;
+  }
+.footnotes li {
+  padding-bottom: 1em;
+  }
+.footnotes li:last-child {
+  padding-bottom: 0;
+  }
+.footnotes li p + p {
+  text-indent: 1em;
+  }
+.footnotes [id*="fn"] {
+  padding-top: 144px;
+  margin-top: -141px;
+  }
+.footnotes li:first-child {
+  z-index: -1;
+  }
+
+
 
 /* Headings & display text elements
 ----------------------------------------------- */
@@ -327,7 +404,8 @@ header .byline {
   float: right;
   }
 
-/* Banners */
+/* Banners & navbar
+----------------------------------------------- */
 
 .banner {
   padding: 48px;
@@ -390,86 +468,54 @@ header .byline {
   color: #542437;
   }
 
-/* Paragraphs & body text elements
------------------------------------------------ */
-
-
-em {
-  font-style: italic;
+.navbar .nav {
+  width: 100%;
+  height: 22px;
+  margin-bottom: 48px;
+  border-radius: 5px;
+  border: 1px solid #cdb380;
+  background-color: #dbc8a6;
   }
-strong {
-  font-weight: bold;
+.navbar .nav li {
+  display: table-cell;
+  width: 1%;
+  text-align: center;
+  text-rendering: optimizelegibility;
   }
-
-p {
-  margin: 0;
-  }
-p + p {
-  text-indent: 24px;
-  }
-
-/* 
-section[role="main"] p:last-child:after {
-  content: "\00B6"; 
-  }
- */
-
-aside, .footnotes, footer {
-  font-size: 13px;
-  line-height: 20px;
-  }
-
-
-
-
-/* Footnotes
------------------------------------------------ */
-
-sub, sup {
+.navbar .nav li a {
+  display: block;
   font-size: 13px;
   font-weight: 600;
-  line-height: 0;
-  }
-sub a, sup a {
+  line-height: 1;
+  padding: 5px 9px 4px;
   text-decoration: none;
+  color: #036564;
+  border-left: 1px solid rgba(232, 221, 203, 0.7);
+  border-right: 1px solid rgba(3, 22, 52, 0.1);
   }
-sup {
-  vertical-align: super;
+.navbar li a:hover,
+.navbar li a:focus {
+  background-color: #cdb380;
   }
-sub {
-  vertical-align: sub;
+.navbar .active a {
+  background-color: #cdb380;
   }
-.footnotes {
-  width: 228px;
-  position: absolute;
-  left: -251px;
-  bottom: 0;
-  color: #033649;
+.navbar li:first-child a {
+  border-left: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   }
-.footnotes hr {
-  width: 30%;
-  display: none;
+.navbar li:last-child a {
+  border-right: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   }
-.footnotes ol {
-  list-style: decimal inside;
+.affix {
+  position: fixed;
+  width: 732px;
+  top: 24px;
+  z-index: 10;
   }
-.footnotes li {
-  padding-bottom: 1em;
-  }
-.footnotes li:last-child {
-  padding-bottom: 0;
-  }
-.footnotes li p + p {
-  text-indent: 1em;
-  }
-.footnotes [id*="fn"] {
-  padding-top: 144px;
-  margin-top: -141px;
-  }
-.footnotes li:first-child {
-  z-index: -1;
-  }
-
 
 /* Book thumbnails
 ----------------------------------------------- */
@@ -538,55 +584,4 @@ sub {
   }
 .group:after {
   clear: both;
-  }
-
-/* Navbar
------------------------------------------------ */
-
-.navbar .nav {
-  width: 100%;
-  height: 22px;
-  margin-bottom: 48px;
-  border-radius: 5px;
-  border: 1px solid #cdb380;
-  background-color: #dbc8a6;
-  }
-.navbar .nav li {
-  display: table-cell;
-  width: 1%;
-  text-align: center;
-  text-rendering: optimizelegibility;
-  }
-.navbar .nav li a {
-  display: block;
-  font-size: 13px;
-  line-height: 1;
-  padding: 5px 9px 4px;
-  text-decoration: none;
-  color: #036564;
-  border-left: 1px solid rgba(232, 221, 203, 0.7);
-  border-right: 1px solid rgba(3, 22, 52, 0.1);
-  }
-.navbar li a:hover,
-.navbar li a:focus {
-  background-color: #cdb380;
-  }
-.navbar .active a {
-  background-color: #cdb380;
-  }
-.navbar li:first-child a {
-  border-left: 0;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  }
-.navbar li:last-child a {
-  border-right: 0;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  }
-.affix {
-  position: fixed;
-  width: 732px;
-  top: 24px;
-  z-index: 10;
   }
